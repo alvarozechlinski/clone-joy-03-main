@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
-import solarField from "@/assets/solar-field.jpg";
+import pageHero from "@/assets/page-hero.avif";
 import solarResidential from "@/assets/solar-residential.jpg";
 import { Building2, Leaf, MapPin, Sun } from "lucide-react";
 
@@ -17,7 +17,7 @@ const SaoJosePage = () => (
     <Navbar />
 
     <section className="relative overflow-hidden pb-20 pt-32">
-      <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${solarField})` }} />
+      <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${pageHero})` }} />
       <div className="absolute inset-0 bg-foreground/60" />
       <div className="relative z-10 container mx-auto px-4 text-center">
         <h1 className="mb-4 text-4xl font-black text-primary-foreground md:text-5xl">{"S\u00e3o Jos\u00e9 dos Campos"}</h1>

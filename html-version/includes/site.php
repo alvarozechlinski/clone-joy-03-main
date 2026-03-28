@@ -21,6 +21,7 @@ $clients = [
     ["name" => "3Corp", "url" => "https://www.3corp.com.br/en/", "logo" => "assets/logo-3corp.png"],
     ["name" => "Achiropita", "url" => "https://achiropita.org.br/", "logo" => "assets/logo-achiropita.webp"],
     ["name" => "Packwind", "url" => "https://packwind.com.br/", "logo" => "assets/logo-packwind.webp"],
+    ["name" => "Novo Cliente", "url" => "", "logo" => "assets/logo-novo-cliente.svg"],
 ];
 
 $cta_boxes = [

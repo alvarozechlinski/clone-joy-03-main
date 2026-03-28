@@ -4,6 +4,7 @@ import logoCG from "@/assets/logo-cgofficemall.webp";
 import logo3Corp from "@/assets/logo-3corp.png";
 import logoAchiropita from "@/assets/logo-achiropita.webp";
 import logoPackwind from "@/assets/logo-packwind.webp";
+import logoNovoCliente from "@/assets/logo-novo-cliente.svg";
 
 const clients = [
   { name: "Localiza Seminovos", url: "https://seminovos.localiza.com/", logo: logoLocaliza },
@@ -12,6 +13,7 @@ const clients = [
   { name: "3Corp", url: "https://www.3corp.com.br/en/", logo: logo3Corp },
   { name: "Achiropita", url: "https://achiropita.org.br/", logo: logoAchiropita },
   { name: "Packwind", url: "https://packwind.com.br/", logo: logoPackwind },
+  { name: "Novo Cliente", url: "", logo: logoNovoCliente },
 ];
 
 const ClientsBar = () => (
@@ -21,10 +23,11 @@ const ClientsBar = () => (
         {clients.map((client) => (
           <a
             key={client.name}
-            href={client.url}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={client.url || undefined}
+            target={client.url ? "_blank" : undefined}
+            rel={client.url ? "noopener noreferrer" : undefined}
             className="flex h-16 items-center justify-center opacity-70 transition-opacity hover:opacity-100"
+            aria-label={client.name}
           >
             <img
               src={client.logo}

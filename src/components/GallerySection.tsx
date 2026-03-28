@@ -20,7 +20,7 @@ const GallerySection = () => (
       <h2 className="mb-12 text-center text-3xl font-bold md:text-4xl">
         Nossos Projetos
       </h2>
-      <div className="columns-1 gap-4 space-y-4 md:columns-2 lg:columns-3">
+      <div className="columns-1 gap-4 space-y-4 sm:columns-2 xl:columns-3">
         {images.map((img, index) => (
           <div
             key={index}

@@ -30,15 +30,15 @@ const TestimonialsSection = () => {
   return (
     <section id="depoimentos" className="gradient-primary py-20">
       <div className="container mx-auto px-4">
-        <div className="mx-auto max-w-3xl text-center">
+        <div className="mx-auto max-w-4xl text-center">
           <Quote className="mx-auto mb-6 h-12 w-12 text-primary-foreground/40" />
-          <p className="mb-8 text-xl font-medium leading-relaxed text-primary-foreground md:text-2xl">
+          <p className="mb-8 text-lg font-medium leading-relaxed text-primary-foreground sm:text-xl md:text-2xl">
             {testimonial.text}
           </p>
           <p className="text-lg font-bold text-primary-foreground">{testimonial.author}</p>
           <p className="text-sm text-primary-foreground/70">{testimonial.role}</p>
 
-          <div className="mt-8 flex items-center justify-center gap-4">
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-3 sm:gap-4">
             <button
               onClick={prev}
               className="rounded-full border border-primary-foreground/30 p-2 text-primary-foreground transition-colors hover:bg-primary-foreground/10"

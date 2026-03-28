@@ -111,14 +111,14 @@ const Navbar = () => {
       {open && (
         <div
           id={mobileMenuId}
-          className="mx-4 mt-2 rounded-2xl border border-border bg-background/95 p-6 shadow-lg backdrop-blur-md animate-fade-in lg:hidden"
+          className="mx-4 mt-2 rounded-2xl border border-border bg-background/95 p-6 text-center shadow-lg backdrop-blur-md animate-fade-in lg:hidden"
         >
           <ul className="flex flex-col gap-3">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <Link
                   to={link.href}
-                  className={`block rounded-lg px-4 py-2 font-medium transition-colors ${
+                  className={`block rounded-lg px-4 py-3 font-medium transition-colors ${
                     location.pathname === link.href
                       ? "bg-primary text-primary-foreground"
                       : "text-foreground hover:bg-muted"
@@ -133,7 +133,7 @@ const Navbar = () => {
             href="https://wa.me/5512997750212"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-4 block rounded-full bg-primary px-5 py-3 text-center font-semibold text-primary-foreground transition-opacity hover:opacity-90"
+            className="mx-auto mt-4 block w-full max-w-[320px] rounded-full bg-primary px-5 py-3 text-center font-semibold text-primary-foreground transition-opacity hover:opacity-90"
           >
             Entre em contato
           </a>

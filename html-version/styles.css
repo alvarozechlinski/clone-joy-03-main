@@ -163,12 +163,15 @@ body.home-page .site-header.is-hidden {
 .hero h1 { max-width: 720px; margin: 0 0 22px; font-size: clamp(2.6rem, 5vw, 4.8rem); line-height: 1.05; }
 .page-hero h1 { margin: 0 0 12px; font-size: clamp(2.4rem, 4vw, 4rem); }
 .hero p, .page-hero p { max-width: 720px; font-size: 1.1rem; line-height: 1.7; }
+.hero-home .btn { width: auto; }
 
 .section { padding: 88px 0; }
 .section-muted { background: var(--surface); }
 .section-dark { background: linear-gradient(135deg, var(--green-dark), var(--green)); color: #fff; }
 .section-title { margin: 0 0 18px; font-size: clamp(2rem, 3.6vw, 3rem); }
 .section-subtitle { color: var(--muted); font-size: 1.06rem; line-height: 1.8; }
+.section-copy { text-align: left; }
+.section-grid { align-items: center; }
 .text-gradient {
   background: linear-gradient(135deg, var(--green-light), var(--green));
   -webkit-background-clip: text;
@@ -211,6 +214,9 @@ body.home-page .site-header.is-hidden {
   background: linear-gradient(rgba(12, 31, 27, 0.55), rgba(12, 31, 27, 0.55)), url("assets/solar-field.jpg") center/cover fixed;
   color: #fff;
 }
+.solar-cover-html .container {
+  text-align: center;
+}
 .cta-grid .cta-card {
   min-height: 320px;
   padding: 48px 28px;
@@ -223,6 +229,10 @@ body.home-page .site-header.is-hidden {
   justify-content: center;
   gap: 24px;
 }
+.cta-grid-html .btn-light {
+  width: auto;
+  min-width: 240px;
+}
 .gallery-grid { columns: 3; column-gap: 18px; }
 .gallery-item {
   break-inside: avoid;
@@ -231,6 +241,7 @@ body.home-page .site-header.is-hidden {
   overflow: hidden;
   box-shadow: var(--shadow);
 }
+.gallery-item img { width: 100%; height: auto; }
 .testimonial { text-align: center; color: #fff; }
 .testimonial p { font-size: 1.24rem; line-height: 1.8; }
 .contact-list { display: grid; gap: 20px; }
@@ -307,13 +318,86 @@ input:focus, textarea:focus {
   .nav-desktop, .desktop-only { display: none; }
   .menu-toggle { display: inline-flex; }
   .mobile-menu.is-open { display: block; }
-  .grid-2, .grid-3, .grid-4, .grid-6, .footer-grid { grid-template-columns: 1fr; }
+  .grid-2, .grid-3, .footer-grid { grid-template-columns: 1fr; }
+  .grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .grid-6 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .footer-contact { justify-self: center; }
   .gallery-grid { columns: 2; }
+  .hero .container, .page-hero .container,
+  .section-dark .container,
+  .section .container {
+    text-align: center;
+  }
+  .section-copy {
+    text-align: center;
+  }
+  .hero p, .page-hero p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .btn, .btn-light, .btn-outline, .nav-cta {
+    width: 100%;
+    max-width: 340px;
+  }
+  .navbar {
+    padding: 12px 18px;
+  }
+  .brand img, .footer-brand img {
+    max-width: 220px;
+    height: 52px;
+  }
+  .media-card img {
+    min-height: 280px;
+  }
+  .contact-section-html .btn,
+  .cta-grid-html .btn-light,
+  .hero-home .btn {
+    width: 100%;
+    max-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media (max-width: 720px) {
   .hero .container, .page-hero .container { padding: 110px 0 86px; }
   .gallery-grid { columns: 1; }
   .container { width: min(100% - 24px, 1160px); }
+  .section { padding: 72px 0; }
+  .hero h1, .page-hero h1 {
+    font-size: clamp(2.2rem, 10vw, 3.6rem);
+  }
+  .hero p, .page-hero p, .section-subtitle {
+    font-size: 1rem;
+  }
+  .grid-4, .grid-6 { grid-template-columns: 1fr; }
+  .cta-grid .cta-card {
+    min-height: 260px;
+    padding: 40px 22px;
+  }
+  .logo-bar img {
+    max-height: 40px;
+  }
+  .footer-grid {
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .navbar {
+    border-radius: 24px;
+  }
+  .brand img, .footer-brand img {
+    max-width: 180px;
+    height: 46px;
+  }
+  .hero .container, .page-hero .container {
+    padding: 100px 0 72px;
+  }
+  .media-card img {
+    min-height: 220px;
+  }
+  .card {
+    padding: 22px;
+  }
 }

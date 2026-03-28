@@ -17,28 +17,22 @@ const clients = [
 const ClientsBar = () => (
   <section className="border-b border-border bg-background py-10">
     <div className="container mx-auto px-4">
-      <div className="grid grid-cols-2 items-center gap-8 md:grid-cols-3 lg:grid-cols-6">
-        {clients.map((client) =>
-          client.url === "#" ? (
-            <div
-              key={client.name}
-              className="flex h-16 items-center justify-center opacity-70"
-              aria-label={client.name}
-            >
-              <img src={client.logo} alt={client.name} className="max-h-12 max-w-full object-contain" />
-            </div>
-          ) : (
-            <a
-              key={client.name}
-              href={client.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex h-16 items-center justify-center opacity-70 transition-opacity hover:opacity-100"
-            >
-              <img src={client.logo} alt={client.name} className="max-h-12 max-w-full object-contain" />
-            </a>
-          )
-        )}
+      <div className="grid grid-cols-2 items-center gap-6 sm:grid-cols-3 lg:grid-cols-6 lg:gap-8">
+        {clients.map((client) => (
+          <a
+            key={client.name}
+            href={client.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex h-16 items-center justify-center opacity-70 transition-opacity hover:opacity-100"
+          >
+            <img
+              src={client.logo}
+              alt={client.name}
+              className="max-h-10 max-w-[140px] object-contain sm:max-h-12 sm:max-w-full"
+            />
+          </a>
+        ))}
       </div>
     </div>
   </section>

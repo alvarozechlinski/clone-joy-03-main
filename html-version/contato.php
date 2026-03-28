@@ -52,9 +52,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
   </section>
 
-  <section class="section sr-reveal">
-    <div class="container grid-2">
-      <div>
+  <section class="section sr-reveal contact-section-html">
+    <div class="container grid-2 section-grid">
+      <div class="section-copy">
         <h2 class="section-title">Fale <span class="text-gradient">Conosco</span></h2>
         <div class="contact-list">
           <div class="contact-item">

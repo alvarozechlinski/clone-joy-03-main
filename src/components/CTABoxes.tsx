@@ -24,9 +24,9 @@ const CTABoxes = () => (
     {boxes.map((box, index) => (
       <div
         key={index}
-        className="gradient-primary py-16 px-8 text-center flex min-h-[320px] flex-col items-center justify-center"
+        className="gradient-primary flex min-h-[280px] flex-col items-center justify-center px-6 py-14 text-center sm:px-8 sm:py-16 lg:min-h-[320px]"
       >
-        <h2 className="mb-6 text-2xl font-bold text-primary-foreground md:text-3xl">
+        <h2 className="mb-6 max-w-md text-2xl font-bold text-primary-foreground md:text-3xl">
           {box.title.split(box.highlight).map((part, partIndex) =>
             partIndex === 0 ? (
               <span key={partIndex}>
@@ -42,7 +42,7 @@ const CTABoxes = () => (
           href={box.href}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center rounded-lg bg-background px-8 py-3 font-bold text-foreground shadow-lg transition-transform hover:scale-105"
+          className="inline-flex w-full max-w-[320px] items-center justify-center rounded-lg bg-background px-6 py-3 font-bold text-foreground shadow-lg transition-transform hover:scale-105"
         >
           {box.cta}
         </a>

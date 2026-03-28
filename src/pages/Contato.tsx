@@ -70,10 +70,10 @@ const ContatoPage = () => {
         <section className="py-20">
           <div className="container mx-auto px-4">
             <div className="grid gap-12 lg:grid-cols-2">
-              <div>
-                <h2 className="mb-8 text-3xl font-bold">
-                  Fale <span className="text-gradient">Conosco</span>
-                </h2>
+            <div className="text-center lg:text-left">
+              <h2 className="mb-8 text-3xl font-bold">
+                Fale <span className="text-gradient">Conosco</span>
+              </h2>
 
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
@@ -111,14 +111,14 @@ const ContatoPage = () => {
                 </div>
 
                 <div className="mt-8">
-                  <a
-                    href="https://wa.me/5512997750212"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center rounded-full bg-primary px-8 py-4 text-lg font-bold text-primary-foreground transition-transform hover:scale-105"
-                  >
-                    Chamar no WhatsApp
-                  </a>
+                <a
+                  href="https://wa.me/5512997750212"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex w-full max-w-[320px] items-center justify-center rounded-full bg-primary px-8 py-4 text-lg font-bold text-primary-foreground transition-transform hover:scale-105 sm:w-auto"
+                >
+                  Chamar no WhatsApp
+                </a>
                 </div>
               </div>
 
@@ -198,6 +198,7 @@ const ContatoPage = () => {
                   <button
                     type="submit"
                     disabled={isSubmitting}
+                    className="w-full rounded-full bg-primary px-6 py-3 font-bold text-primary-foreground transition-opacity hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-70"
                     className="w-full rounded-full bg-primary px-6 py-3 font-bold text-primary-foreground transition-opacity hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-70"
                   >
                     {isSubmitting ? "Enviando..." : "Enviar mensagem"}

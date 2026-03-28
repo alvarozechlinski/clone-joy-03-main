@@ -22,18 +22,11 @@ a { color: inherit; text-decoration: none; }
 img { display: block; max-width: 100%; }
 .container { width: min(1160px, calc(100% - 32px)); margin: 0 auto; }
 
-body.home-page .site-header {
+.site-header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 100;
-  padding: 16px 0;
-  transition: padding 0.4s ease;
-}
-.site-header {
-  position: sticky;
-  top: 0;
   z-index: 100;
   padding: 16px 0;
   transition: padding 0.4s ease;
@@ -80,14 +73,14 @@ body.home-page .site-header {
   background: var(--green);
   color: #fff;
 }
-body.home-page .site-header-home .navbar,
+.site-header .navbar,
 .site-header-home .navbar-home {
   background: transparent;
   border-color: transparent;
   box-shadow: none;
   backdrop-filter: blur(0);
 }
-body.home-page .site-header-home.is-scrolled .navbar,
+.site-header.is-scrolled .navbar,
 .site-header-home.is-scrolled .navbar-home {
   background: rgba(255, 255, 255, 0.92);
   border-color: var(--border);
@@ -98,43 +91,43 @@ body.home-page .site-header-home.is-scrolled .navbar,
   padding-top: 10px;
   padding-bottom: 10px;
 }
-body.home-page .site-header-home .nav-link-home,
+.site-header .nav-link-home,
 .site-header-home .nav-link-home {
   color: #fff;
 }
-body.home-page .site-header-home.is-scrolled .nav-link-home,
+.site-header.is-scrolled .nav-link-home,
 .site-header-home.is-scrolled .nav-link-home {
   color: var(--text);
 }
-body.home-page .site-header-home .nav-link-home:hover,
-body.home-page .site-header-home .nav-link-home.active,
+.site-header .nav-link-home:hover,
+.site-header .nav-link-home.active,
 .site-header-home .nav-link-home:hover,
 .site-header-home .nav-link-home.active {
   background: rgba(255, 255, 255, 0.16);
   color: #fff;
 }
-body.home-page .site-header-home.is-scrolled .nav-link-home:hover,
-body.home-page .site-header-home.is-scrolled .nav-link-home.active,
+.site-header.is-scrolled .nav-link-home:hover,
+.site-header.is-scrolled .nav-link-home.active,
 .site-header-home.is-scrolled .nav-link-home:hover,
 .site-header-home.is-scrolled .nav-link-home.active {
   background: var(--green);
   color: #fff;
 }
-body.home-page .site-header-home .nav-cta-home,
+.site-header .nav-cta-home,
 .site-header-home .nav-cta-home {
   background: #fff;
   color: var(--text);
 }
-body.home-page .site-header-home.is-scrolled .nav-cta-home,
+.site-header.is-scrolled .nav-cta-home,
 .site-header-home.is-scrolled .nav-cta-home {
   background: var(--green);
   color: #fff;
 }
-body.home-page .site-header-home .menu-toggle-home span,
+.site-header .menu-toggle-home span,
 .site-header-home .menu-toggle-home span {
   background: #fff;
 }
-body.home-page .site-header-home.is-scrolled .menu-toggle-home span,
+.site-header.is-scrolled .menu-toggle-home span,
 .site-header-home.is-scrolled .menu-toggle-home span {
   background: var(--text);
 }

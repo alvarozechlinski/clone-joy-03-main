@@ -15,9 +15,8 @@ const Navbar = () => {
   const [scrollY, setScrollY] = useState(0);
   const location = useLocation();
   const mobileMenuId = "mobile-menu";
-  const isHome = location.pathname === "/";
   const isScrolled = scrollY > 72 || open;
-  const useSolidStyle = !isHome || isScrolled;
+  const useSolidStyle = isScrolled;
 
   useEffect(() => {
     setOpen(false);

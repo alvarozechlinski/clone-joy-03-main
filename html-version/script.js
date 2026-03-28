@@ -1,6 +1,6 @@
 const toggle = document.querySelector(".menu-toggle");
 const mobileMenu = document.getElementById("mobile-menu");
-const siteHeader = document.querySelector('.site-header[data-home="true"]');
+const siteHeader = document.querySelector(".site-header");
 
 if (toggle && mobileMenu) {
   toggle.addEventListener("click", () => {

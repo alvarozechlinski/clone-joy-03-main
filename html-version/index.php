@@ -65,11 +65,11 @@
       <div class="section-copy">
         <h2 class="section-title">Mercado Livre de Energia</h2>
         <p class="section-subtitle">Mude do mercado tradicional e escolha o seu fornecedor de energia.</p>
-        <p class="section-subtitle">Reduza o seu custo, com <span class="text-gradient">baixo investimento</span> e consuma energia de fontes renov&aacute;veis.</p>
+        <p class="section-subtitle">Reduza o seu custo, com <span class="market-highlight">baixo investimento</span> e consuma energia de fontes renov&aacute;veis.</p>
         <ul class="market-bullets">
           <li>Ideal para empresas eleg&iacute;veis em m&eacute;dia e alta tens&atilde;o.</li>
           <li>Economia potencial com a escolha do fornecedor e gest&atilde;o do consumo.</li>
-          <li>Acompanhamento consultivo do diagn&oacute;stico at&eacute; a migra&ccedil;&atilde;o.</li>
+          <li>Tenha at&eacute; 30% economia mensal na sua fatura.</li>
         </ul>
         <p class="section-subtitle">*Consulte a elegibilidade da sua unidade consumidora.</p>
         <a class="btn" href="https://wa.me/<?= htmlspecialchars($site_phone_link) ?>" target="_blank" rel="noopener noreferrer">Receba uma consultoria gratuita</a>

@@ -16,19 +16,14 @@ const Navbar = () => {
   const location = useLocation();
   const mobileMenuId = "mobile-menu";
   const isHome = location.pathname === "/";
-  const isScrolled = scrollY > 72;
-  const useSolidStyle = !isHome || isScrolled || open;
+  const isScrolled = scrollY > 72 || open;
+  const useSolidStyle = !isHome || isScrolled;
 
   useEffect(() => {
     setOpen(false);
   }, [location.pathname]);
 
   useEffect(() => {
-    if (!isHome) {
-      setScrollY(0);
-      return;
-    }
-
     const handleScroll = () => {
       setScrollY(window.scrollY);
     };
@@ -36,7 +31,7 @@ const Navbar = () => {
     handleScroll();
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [isHome]);
+  }, []);
 
   return (
     <header className="fixed left-0 right-0 top-0 z-50 px-4 py-3 transition-all duration-500">
@@ -52,7 +47,7 @@ const Navbar = () => {
             src={logo}
             alt="Leal Energia"
             className={`w-auto object-contain transition-all duration-500 ${
-              useSolidStyle ? "h-11 max-w-[188px] sm:h-12" : "h-12 max-w-[220px] sm:h-14"
+              isScrolled ? "h-11 max-w-[188px] sm:h-12" : "h-12 max-w-[220px] sm:h-14"
             }`}
           />
         </Link>

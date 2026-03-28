@@ -22,18 +22,18 @@ const MercadoLivreSection = () => (
           </p>
           <p className="mb-4 text-base text-muted-foreground sm:text-lg">
             {"Reduza o seu custo, com "}
-            <span className="font-semibold text-gradient">baixo investimento</span>
+            <span className="font-semibold text-[#5ea81f]">baixo investimento</span>
             {" e consuma energia de fontes renov\u00e1veis!"}
           </p>
-          <ul className="mb-6 space-y-3 text-left text-sm text-muted-foreground sm:text-base">
-            <li className="rounded-2xl border border-border bg-muted/40 px-4 py-3">
+          <ul className="mb-6 space-y-3 text-left text-sm sm:text-base">
+            <li className="rounded-2xl border border-[#5ea81f]/25 bg-[#5ea81f]/12 px-4 py-3 text-[#5ea81f]">
               {"Ideal para empresas eleg\u00edveis em m\u00e9dia e alta tens\u00e3o."}
             </li>
-            <li className="rounded-2xl border border-border bg-muted/40 px-4 py-3">
+            <li className="rounded-2xl border border-[#5ea81f]/25 bg-[#5ea81f]/12 px-4 py-3 text-[#5ea81f]">
               {"Economia potencial com a escolha do fornecedor e gest\u00e3o do consumo."}
             </li>
-            <li className="rounded-2xl border border-border bg-muted/40 px-4 py-3">
-              {"Acompanhamento consultivo do diagn\u00f3stico at\u00e9 a migra\u00e7\u00e3o."}
+            <li className="rounded-2xl border border-[#5ea81f]/25 bg-[#5ea81f]/12 px-4 py-3 text-[#5ea81f]">
+              {"Tenha at\u00e9 30% economia mensal na sua fatura."}
             </li>
           </ul>
           <p className="mb-6 text-sm text-muted-foreground">

@@ -1,10 +1,10 @@
-import solarField from "@/assets/solar-field.jpg";
+import solarCover from "@/assets/solar-cover.avif";
 
 const SolarCoverSection = () => (
   <section
     className="relative flex items-center justify-center py-20 sm:py-24 lg:py-28"
     style={{
-      backgroundImage: `url(${solarField})`,
+      backgroundImage: `url(${solarCover})`,
       backgroundSize: "cover",
       backgroundPosition: "center",
       backgroundAttachment: "scroll",

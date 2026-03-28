@@ -58,7 +58,7 @@ $gallery_images = [
     ["src" => "assets/projeto-6.jpg", "alt" => "Estacionamento com cobertura de energia solar"],
 ];
 
-function render_head(string $title, string $description): void
+function render_head(string $title, string $description, string $body_class = ''): void
 {
     global $site_name;
     ?>
@@ -72,7 +72,7 @@ function render_head(string $title, string $description): void
   <meta name="theme-color" content="#0d4f33">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="<?= htmlspecialchars($body_class) ?>">
     <?php
 }
 
@@ -81,7 +81,7 @@ function render_header(string $current_page): void
     global $nav_items, $site_phone_link;
     $is_home = $current_page === 'index.php';
     ?>
-<header class="site-header<?= $is_home ? ' site-header-home' : '' ?>">
+<header class="site-header<?= $is_home ? ' site-header-home' : '' ?>" data-home="<?= $is_home ? 'true' : 'false' ?>">
   <div class="container">
     <nav class="navbar<?= $is_home ? ' navbar-home' : '' ?>">
       <a class="brand" href="index.php"><img src="assets/logo-leal.png" alt="Leal Energia"></a>

@@ -1,5 +1,5 @@
 <?php require __DIR__ . '/includes/site.php'; ?>
-<?php render_head('Início', $site_description); ?>
+<?php render_head('Início', $site_description, 'home-page'); ?>
 <?php render_header('index.php'); ?>
 
 <main>

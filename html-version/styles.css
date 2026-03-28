@@ -156,7 +156,7 @@ body.home-page .site-header.is-hidden {
   min-height: 92vh;
   display: flex;
   align-items: center;
-  background: url("assets/hero-solar.jpg") center/cover no-repeat;
+  background: url("assets/hero-home.jpg") center/cover no-repeat;
 }
 .page-hero { background: url("assets/solar-field.jpg") center/cover no-repeat; }
 .hero .container, .page-hero .container { padding: 130px 0 100px; }

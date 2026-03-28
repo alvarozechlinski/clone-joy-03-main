@@ -79,18 +79,19 @@ function render_head(string $title, string $description): void
 function render_header(string $current_page): void
 {
     global $nav_items, $site_phone_link;
+    $is_home = $current_page === 'index.php';
     ?>
-<header class="site-header">
+<header class="site-header<?= $is_home ? ' site-header-home' : '' ?>">
   <div class="container">
-    <nav class="navbar">
+    <nav class="navbar<?= $is_home ? ' navbar-home' : '' ?>">
       <a class="brand" href="index.php"><img src="assets/logo-leal.png" alt="Leal Energia"></a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
+      <button class="menu-toggle<?= $is_home ? ' menu-toggle-home' : '' ?>" type="button" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
       <ul class="nav-links nav-desktop">
         <?php foreach ($nav_items as $item): ?>
-          <li><a class="<?= $current_page === $item["href"] ? "active" : "" ?>" href="<?= htmlspecialchars($item["href"]) ?>"><?= htmlspecialchars($item["label"]) ?></a></li>
+          <li><a class="<?= $current_page === $item["href"] ? "active" : "" ?><?= $is_home ? ' nav-link-home' : '' ?>" href="<?= htmlspecialchars($item["href"]) ?>"><?= htmlspecialchars($item["label"]) ?></a></li>
         <?php endforeach; ?>
       </ul>
-      <a class="nav-cta desktop-only" href="https://wa.me/<?= htmlspecialchars($site_phone_link) ?>" target="_blank" rel="noopener noreferrer">Entre em contato</a>
+      <a class="nav-cta desktop-only<?= $is_home ? ' nav-cta-home' : '' ?>" href="https://wa.me/<?= htmlspecialchars($site_phone_link) ?>" target="_blank" rel="noopener noreferrer">Entre em contato</a>
     </nav>
     <div id="mobile-menu" class="mobile-menu">
       <ul class="nav-links">

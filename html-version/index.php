@@ -69,7 +69,7 @@
         <ul class="market-bullets">
           <li>Ideal para empresas eleg&iacute;veis em m&eacute;dia e alta tens&atilde;o.</li>
           <li>Economia potencial com a escolha do fornecedor e gest&atilde;o do consumo.</li>
-          <li>Tenha at&eacute; 30% economia mensal na sua fatura.</li>
+          <li>Tenha at&eacute; 30% de economia mensal na sua fatura.</li>
         </ul>
         <p class="section-subtitle">*Consulte a elegibilidade da sua unidade consumidora.</p>
         <a class="btn" href="https://wa.me/<?= htmlspecialchars($site_phone_link) ?>" target="_blank" rel="noopener noreferrer">Receba uma consultoria gratuita</a>

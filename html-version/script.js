@@ -26,18 +26,16 @@ if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-mot
 }
 
 if (siteHeader) {
-  const updateHeaderFade = () => {
-    const opacity = Math.max(0, 1 - window.scrollY / 220);
-    siteHeader.style.opacity = String(opacity);
-    siteHeader.classList.toggle("is-hidden", opacity <= 0.04 && !mobileMenu?.classList.contains("is-open"));
+  const updateHeaderState = () => {
+    siteHeader.classList.toggle("is-scrolled", window.scrollY > 72 || mobileMenu?.classList.contains("is-open"));
   };
 
-  updateHeaderFade();
-  window.addEventListener("scroll", updateHeaderFade, { passive: true });
+  updateHeaderState();
+  window.addEventListener("scroll", updateHeaderState, { passive: true });
 
   if (toggle && mobileMenu) {
     toggle.addEventListener("click", () => {
-      requestAnimationFrame(updateHeaderFade);
+      requestAnimationFrame(updateHeaderState);
     });
   }
 }

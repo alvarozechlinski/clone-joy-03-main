@@ -1,12 +1,12 @@
 <?php require __DIR__ . '/includes/site.php'; ?>
-<?php render_head('Início', $site_description, 'home-page'); ?>
+<?php render_head('In' . "\u{00ED}" . 'cio', $site_description, 'home-page'); ?>
 <?php render_header('index.php'); ?>
 
 <main>
   <section class="hero hero-home">
     <div class="container hero-content">
-      <h1>CONSTRUINDO CAMINHOS DO SOL ATÉ VOCÊ!</h1>
-      <p>Ajudamos empresas e pessoas a mudar sua relação com a energia.</p>
+      <h1>CONSTRUINDO CAMINHOS DO SOL AT&Eacute; VOC&Ecirc;!</h1>
+      <p>Ajudamos empresas e pessoas a mudar sua rela&ccedil;&atilde;o com a energia.</p>
       <a class="btn" href="https://wa.me/<?= htmlspecialchars($site_phone_link) ?>" target="_blank" rel="noopener noreferrer">Comece a economizar agora!</a>
     </div>
   </section>
@@ -25,19 +25,19 @@
 
   <section class="section sr-reveal about-section">
     <div class="container">
-      <h2 class="section-title" style="text-align:center;">O que podemos fazer por <span class="text-gradient">você</span>?</h2>
+      <h2 class="section-title" style="text-align:center;">O que podemos fazer por <span class="text-gradient">voc&ecirc;</span>?</h2>
       <div class="grid-2 section-grid" style="margin-top:40px;">
         <div class="section-copy">
-          <h3 class="section-title" style="font-size:2rem;">Energia limpa e <span class="text-gradient">renovável</span></h3>
-          <p class="section-subtitle">Entregamos soluções de energia, transformando a forma como empresas e pessoas geram e consomem energia.</p>
-          <p class="section-subtitle">Nosso objetivo é simples: ajudar você a reduzir custos, aumentar a sustentabilidade e construir um futuro mais verde.</p>
+          <h3 class="section-title" style="font-size:2rem;">Energia limpa e <span class="text-gradient">renov&aacute;vel</span></h3>
+          <p class="section-subtitle">Entregamos solu&ccedil;&otilde;es de energia, transformando a forma como empresas e pessoas geram e consomem energia.</p>
+          <p class="section-subtitle">Nosso objetivo &eacute; simples: ajudar voc&ecirc; a reduzir custos, aumentar a sustentabilidade e construir um futuro mais verde.</p>
         </div>
-        <div class="media-card"><img src="assets/solar-rooftop.jpg" alt="Painéis solares em telhado comercial"></div>
+        <div class="media-card"><img src="assets/solar-rooftop.jpg" alt="Pain&eacute;is solares em telhado comercial"></div>
       </div>
       <div class="grid-2 section-grid" style="margin-top:28px;">
-        <div class="media-card"><img src="assets/solar-residential.jpg" alt="Instalação de painéis solares residencial"></div>
+        <div class="media-card"><img src="assets/solar-residential.jpg" alt="Instala&ccedil;&atilde;o de pain&eacute;is solares residencial"></div>
         <div class="card section-copy" style="display:flex;align-items:center;">
-          <p class="section-subtitle">Projetamos e implementamos sistemas solares personalizados, otimizando o desempenho energético e garantindo economia, automação, segurança e longevidade para o seu negócio.</p>
+          <p class="section-subtitle">Projetamos e implementamos sistemas solares personalizados, otimizando o desempenho energ&eacute;tico e garantindo economia, automa&ccedil;&atilde;o, seguran&ccedil;a e longevidade para o seu neg&oacute;cio.</p>
         </div>
       </div>
     </div>
@@ -46,7 +46,7 @@
   <section class="section cover-block sr-reveal solar-cover-html">
     <div class="container">
       <h2 class="section-title">Energia Solar</h2>
-      <p>Entregamos soluções de energia solar, transformando a forma como empresas de todos os portes geram e consomem energia.</p>
+      <p>Entregamos solu&ccedil;&otilde;es de energia solar, transformando a forma como empresas de todos os portes geram e consomem energia.</p>
     </div>
   </section>
 
@@ -65,8 +65,13 @@
       <div class="section-copy">
         <h2 class="section-title">Mercado Livre de Energia</h2>
         <p class="section-subtitle">Mude do mercado tradicional e escolha o seu fornecedor de energia.</p>
-        <p class="section-subtitle">Reduza o seu custo, com <span class="text-gradient">baixo investimento</span> e consuma energia de fontes renováveis.</p>
-        <p class="section-subtitle">*Para unidades em alta tensão.</p>
+        <p class="section-subtitle">Reduza o seu custo, com <span class="text-gradient">baixo investimento</span> e consuma energia de fontes renov&aacute;veis.</p>
+        <ul class="market-bullets">
+          <li>Ideal para empresas eleg&iacute;veis em m&eacute;dia e alta tens&atilde;o.</li>
+          <li>Economia potencial com a escolha do fornecedor e gest&atilde;o do consumo.</li>
+          <li>Acompanhamento consultivo do diagn&oacute;stico at&eacute; a migra&ccedil;&atilde;o.</li>
+        </ul>
+        <p class="section-subtitle">*Consulte a elegibilidade da sua unidade consumidora.</p>
         <a class="btn" href="https://wa.me/<?= htmlspecialchars($site_phone_link) ?>" target="_blank" rel="noopener noreferrer">Receba uma consultoria gratuita</a>
       </div>
     </div>
@@ -75,14 +80,14 @@
   <section class="section section-muted sr-reveal">
     <div class="container grid-2 section-grid">
       <div class="section-copy">
-        <h2 class="section-title">Consultoria energética</h2>
+        <h2 class="section-title">Consultoria energ&eacute;tica</h2>
         <h3>Desenvolvimento de Projetos</h3>
-        <p class="section-subtitle">Contamos com experiências sólidas na implementação de projetos de micro e mini geração, ZeroGrid, carregadores elétricos e aquecimento de água.</p>
-        <h3>Segurança e eficiência</h3>
-        <p class="section-subtitle">Elaboramos cada projeto com um olhar específico, oferecendo soluções complementares e adequadas a cada cliente.</p>
+        <p class="section-subtitle">Contamos com experi&ecirc;ncias s&oacute;lidas na implementa&ccedil;&atilde;o de projetos de micro e mini gera&ccedil;&atilde;o, ZeroGrid, carregadores el&eacute;tricos e aquecimento de &aacute;gua.</p>
+        <h3>Seguran&ccedil;a e efici&ecirc;ncia</h3>
+        <p class="section-subtitle">Elaboramos cada projeto com um olhar espec&iacute;fico, oferecendo solu&ccedil;&otilde;es complementares e adequadas a cada cliente.</p>
         <a class="btn" href="https://wa.me/<?= htmlspecialchars($site_phone_link) ?>" target="_blank" rel="noopener noreferrer">Quero uma consultoria!</a>
       </div>
-      <div class="media-card"><img src="assets/consulting.jpg" alt="Consultoria energética"></div>
+      <div class="media-card"><img src="assets/consulting.jpg" alt="Consultoria energ&eacute;tica"></div>
     </div>
   </section>
 
@@ -99,13 +104,13 @@
         <?php endforeach; ?>
       </div>
       <div class="testimonial-controls">
-        <button class="testimonial-arrow" type="button" data-testimonial-prev aria-label="Anterior">‹</button>
+        <button class="testimonial-arrow" type="button" data-testimonial-prev aria-label="Anterior">&#8249;</button>
         <div class="testimonial-dots">
           <?php foreach ($testimonials as $index => $testimonial): ?>
             <button class="testimonial-dot<?= $index === 0 ? ' is-active' : '' ?>" type="button" data-testimonial-dot="<?= $index ?>" aria-label="Slide <?= $index + 1 ?>"></button>
           <?php endforeach; ?>
         </div>
-        <button class="testimonial-arrow" type="button" data-testimonial-next aria-label="Próximo">›</button>
+        <button class="testimonial-arrow" type="button" data-testimonial-next aria-label="Pr&oacute;ximo">&#8250;</button>
       </div>
     </div>
   </section>

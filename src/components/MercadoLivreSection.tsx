@@ -21,10 +21,23 @@ const MercadoLivreSection = () => (
             Mude do mercado tradicional e escolha o seu fornecedor de energia!
           </p>
           <p className="mb-4 text-base text-muted-foreground sm:text-lg">
-            Reduza o seu custo, com <span className="font-semibold text-gradient">baixo investimento</span> e consuma energia de fontes renováveis!
+            {"Reduza o seu custo, com "}
+            <span className="font-semibold text-gradient">baixo investimento</span>
+            {" e consuma energia de fontes renov\u00e1veis!"}
           </p>
+          <ul className="mb-6 space-y-3 text-left text-sm text-muted-foreground sm:text-base">
+            <li className="rounded-2xl border border-border bg-muted/40 px-4 py-3">
+              {"Ideal para empresas eleg\u00edveis em m\u00e9dia e alta tens\u00e3o."}
+            </li>
+            <li className="rounded-2xl border border-border bg-muted/40 px-4 py-3">
+              {"Economia potencial com a escolha do fornecedor e gest\u00e3o do consumo."}
+            </li>
+            <li className="rounded-2xl border border-border bg-muted/40 px-4 py-3">
+              {"Acompanhamento consultivo do diagn\u00f3stico at\u00e9 a migra\u00e7\u00e3o."}
+            </li>
+          </ul>
           <p className="mb-6 text-sm text-muted-foreground">
-            *Para unidades em alta tensão.
+            {"*Consulte a elegibilidade da sua unidade consumidora."}
           </p>
           <a
             href="https://wa.me/5512997750212"

@@ -3,18 +3,18 @@ import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    text: "Equipe bem atenciosa, bem profissional! Bem atendido desde a área comercial até a entrega do serviço instalado. Ressaltando também o retorno do pós-venda pelo interesse em saber da satisfação após as primeiras contas!",
+    text: "Equipe bem atenciosa, bem profissional! Bem atendido desde a \u00e1rea comercial at\u00e9 a entrega do servi\u00e7o instalado. Ressaltando tamb\u00e9m o retorno do p\u00f3s-venda pelo interesse em saber da satisfa\u00e7\u00e3o ap\u00f3s as primeiras contas!",
     author: "Carlos Azevedo",
     role: "Sistema Residencial",
   },
   {
-    text: "Excelente lugar e de fácil acesso! Muito impressionado com a infraestrutura da empresa. Além do produto ser de primeira linha, a confiabilidade e o tratamento aos clientes são inquestionáveis. Parabéns Leal Energia por seu trabalho! Recomendo!",
+    text: "Excelente lugar e de f\u00e1cil acesso! Muito impressionado com a infraestrutura da empresa. Al\u00e9m do produto ser de primeira linha, a confiabilidade e o tratamento aos clientes s\u00e3o inquestion\u00e1veis. Parab\u00e9ns Leal Energia por seu trabalho! Recomendo!",
     author: "Cezar Justino",
     role: "Sistema Residencial",
   },
   {
-    text: "Fomos muito bem atendidos pela Leal Energia Solar! Equipe de instalação muito experiente, muito obrigado pelo serviço prestado! Ótimo investimento!",
-    author: "João",
+    text: "Fomos muito bem atendidos pela Leal Energia Solar! Equipe de instala\u00e7\u00e3o muito experiente, muito obrigado pelo servi\u00e7o prestado! \u00d3timo investimento!",
+    author: "Jo\u00e3o",
     role: "Planta Industrial",
   },
 ];
@@ -63,7 +63,7 @@ const TestimonialsSection = () => {
             <button
               onClick={next}
               className="rounded-full border border-primary-foreground/30 p-2 text-primary-foreground transition-colors hover:bg-primary-foreground/10"
-              aria-label="Próximo"
+              aria-label={"Pr\u00f3ximo"}
             >
               <ChevronRight size={24} />
             </button>

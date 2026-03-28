@@ -33,7 +33,7 @@ const ContatoPage = () => {
       });
 
       if (!response.ok) {
-        throw new Error("Falha ao enviar o formulário.");
+        throw new Error("Falha ao enviar o formul\u00e1rio.");
       }
 
       setFeedback({
@@ -44,7 +44,7 @@ const ContatoPage = () => {
     } catch {
       setFeedback({
         type: "error",
-        message: "Não foi possível enviar agora. Tente novamente em instantes ou fale pelo WhatsApp.",
+        message: "N\u00e3o foi poss\u00edvel enviar agora. Tente novamente em instantes ou fale pelo WhatsApp.",
       });
     } finally {
       setIsSubmitting(false);
@@ -61,7 +61,7 @@ const ContatoPage = () => {
         <div className="relative z-10 container mx-auto px-4 text-center">
           <h1 className="mb-4 text-4xl font-black text-primary-foreground md:text-5xl">Contato</h1>
           <p className="mx-auto max-w-2xl text-lg text-primary-foreground/80">
-            Entre em contato e solicite seu orçamento sem compromisso.
+            {"Entre em contato e solicite seu or\u00e7amento sem compromisso."}
           </p>
         </div>
       </section>
@@ -70,17 +70,17 @@ const ContatoPage = () => {
         <section className="py-20">
           <div className="container mx-auto px-4">
             <div className="grid gap-12 lg:grid-cols-2">
-            <div className="text-center lg:text-left">
-              <h2 className="mb-8 text-3xl font-bold">
-                Fale <span className="text-gradient">Conosco</span>
-              </h2>
+              <div className="text-center lg:text-left">
+                <h2 className="mb-8 text-3xl font-bold">
+                  Fale <span className="text-gradient">Conosco</span>
+                </h2>
 
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
                     <MapPin className="mt-1 h-6 w-6 shrink-0 text-primary" />
                     <div>
-                      <h4 className="mb-1 font-bold">Endereço</h4>
-                      <p className="text-muted-foreground">São José dos Campos - SP</p>
+                      <h4 className="mb-1 font-bold">{"Endere\u00e7o"}</h4>
+                      <p className="text-muted-foreground">{"S\u00e3o Jos\u00e9 dos Campos - SP"}</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -94,7 +94,7 @@ const ContatoPage = () => {
                   </div>
                   <div className="flex items-start gap-4">
                     <Mail className="mt-1 h-6 w-6 shrink-0 text-primary" />
-                  <div>
+                    <div>
                       <h4 className="mb-1 font-bold">E-mail</h4>
                       <a href="mailto:contato@lealenergia.com.br" className="text-primary hover:underline">
                         contato@lealenergia.com.br
@@ -104,21 +104,24 @@ const ContatoPage = () => {
                   <div className="flex items-start gap-4">
                     <Clock className="mt-1 h-6 w-6 shrink-0 text-primary" />
                     <div>
-                      <h4 className="mb-1 font-bold">Horário de Atendimento</h4>
-                      <p className="text-muted-foreground">Segunda a Sexta: 08h às 18h</p>
+                      <h4 className="mb-1 font-bold">{"Hor\u00e1rio de Atendimento"}</h4>
+                      <p className="text-muted-foreground">{"Segunda a Sexta: 08h \u00e0s 18h"}</p>
                     </div>
                   </div>
                 </div>
 
                 <div className="mt-8">
-                <a
-                  href="https://wa.me/5512997750212"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex w-full max-w-[320px] items-center justify-center rounded-full bg-primary px-8 py-4 text-lg font-bold text-primary-foreground transition-transform hover:scale-105 sm:w-auto"
-                >
-                  Chamar no WhatsApp
-                </a>
+                  <a
+                    href="https://wa.me/5512997750212"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex w-full max-w-[320px] items-center justify-center rounded-full bg-primary px-8 py-4 text-lg font-bold text-primary-foreground transition-transform hover:scale-105 sm:w-auto"
+                  >
+                    Chamar no WhatsApp
+                  </a>
+                  <p className="mt-3 text-sm text-muted-foreground">
+                    {"Respondemos em hor\u00e1rio comercial e retornamos o mais r\u00e1pido poss\u00edvel."}
+                  </p>
                 </div>
               </div>
 
@@ -198,7 +201,6 @@ const ContatoPage = () => {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full rounded-full bg-primary px-6 py-3 font-bold text-primary-foreground transition-opacity hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-70"
                     className="w-full rounded-full bg-primary px-6 py-3 font-bold text-primary-foreground transition-opacity hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-70"
                   >
                     {isSubmitting ? "Enviando..." : "Enviar mensagem"}

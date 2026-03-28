@@ -1,16 +1,16 @@
 <?php
 
 $site_name = "Leal Energia";
-$site_description = "Leal Energia: energia solar em São José dos Campos, mercado livre de energia e soluções para residências, comércios e indústrias.";
+$site_description = "Leal Energia: energia solar em S\u{00E3}o Jos\u{00E9} dos Campos, mercado livre de energia e solu\u{00E7}\u{00F5}es para resid\u{00EA}ncias, com\u{00E9}rcios e ind\u{00FA}strias.";
 $site_email = "contato@lealenergia.com.br";
 $lead_email = "alvaro.zechlinski@lealenergia.com.br";
 $site_phone_display = "(12) 99775-0212";
 $site_phone_link = "5512997750212";
 
 $nav_items = [
-    ["label" => "Início", "href" => "index.php"],
+    ["label" => "In\u{00ED}cio", "href" => "index.php"],
     ["label" => "Sobre", "href" => "sobre.php"],
-    ["label" => "São José dos Campos", "href" => "sao-jose-dos-campos.php"],
+    ["label" => "S\u{00E3}o Jos\u{00E9} dos Campos", "href" => "sao-jose-dos-campos.php"],
     ["label" => "Contato", "href" => "contato.php"],
 ];
 
@@ -24,37 +24,37 @@ $clients = [
 ];
 
 $cta_boxes = [
-    ["title_before" => "Quer ", "highlight" => "reduzir", "title_after" => " os custos da sua residência ou comércio?", "cta" => "Comece a economizar!"],
-    ["title_before" => "Sua empresa ou indústria precisa de ", "highlight" => "soluções", "title_after" => " em energia?", "cta" => "CONHEÇA AS SOLUÇÕES!"],
-    ["title_before" => "Quer o sol ", "highlight" => "trabalhando", "title_after" => " por você? Entenda como!", "cta" => "DESCUBRA COMO!"],
+    ["title_before" => "Quer ", "highlight" => "reduzir", "title_after" => " os custos da sua resid\u{00EA}ncia ou com\u{00E9}rcio?", "cta" => "Comece a economizar!"],
+    ["title_before" => "Sua empresa ou ind\u{00FA}stria precisa de ", "highlight" => "solu\u{00E7}\u{00F5}es", "title_after" => " em energia?", "cta" => "CONHE\u{00C7}A AS SOLU\u{00C7}\u{00D5}ES!"],
+    ["title_before" => "Quer o sol ", "highlight" => "trabalhando", "title_after" => " por voc\u{00EA}? Entenda como!", "cta" => "DESCUBRA COMO!"],
 ];
 
 $values = [
-    ["title" => "Pessoas em primeiro lugar", "text" => "Valorizamos cada cliente e cada colaborador, construindo relações de confiança e transparência."],
-    ["title" => "Excelência", "text" => "Buscamos a mais alta qualidade em cada projeto, desde o planejamento até a entrega final."],
-    ["title" => "Inovação", "text" => "Acompanhamos as últimas tecnologias do setor para oferecer as melhores soluções em energia solar."],
-    ["title" => "Compromisso", "text" => "Assumimos o compromisso com a sustentabilidade e com o futuro energético do Brasil."],
+    ["title" => "Pessoas em primeiro lugar", "text" => "Valorizamos cada cliente e cada colaborador, construindo rela\u{00E7}\u{00F5}es de confian\u{00E7}a e transpar\u{00EA}ncia."],
+    ["title" => "Excel\u{00EA}ncia", "text" => "Buscamos a mais alta qualidade em cada projeto, desde o planejamento at\u{00E9} a entrega final."],
+    ["title" => "Inova\u{00E7}\u{00E3}o", "text" => "Acompanhamos as \u{00FA}ltimas tecnologias do setor para oferecer as melhores solu\u{00E7}\u{00F5}es em energia solar."],
+    ["title" => "Compromisso", "text" => "Assumimos o compromisso com a sustentabilidade e com o futuro energ\u{00E9}tico do Brasil."],
 ];
 
 $sjc_features = [
-    ["title" => "Alta Irradiação Solar", "text" => "São José dos Campos possui excelente incidência solar durante todo o ano, ideal para geração fotovoltaica."],
-    ["title" => "Polo Tecnológico", "text" => "A cidade é um centro de inovação e tecnologia, com empresas que buscam soluções sustentáveis de energia."],
-    ["title" => "Sustentabilidade", "text" => "Contribua para uma cidade mais verde e sustentável, reduzindo a pegada de carbono do Vale do Paraíba."],
-    ["title" => "Atendimento Local", "text" => "Estamos presentes em São José dos Campos com equipe técnica especializada para atender você."],
+    ["title" => "Alta Irradia\u{00E7}\u{00E3}o Solar", "text" => "S\u{00E3}o Jos\u{00E9} dos Campos possui excelente incid\u{00EA}ncia solar durante todo o ano, ideal para gera\u{00E7}\u{00E3}o fotovoltaica."],
+    ["title" => "Polo Tecnol\u{00F3}gico", "text" => "A cidade \u{00E9} um centro de inova\u{00E7}\u{00E3}o e tecnologia, com empresas que buscam solu\u{00E7}\u{00F5}es sustent\u{00E1}veis de energia."],
+    ["title" => "Sustentabilidade", "text" => "Contribua para uma cidade mais verde e sustent\u{00E1}vel, reduzindo a pegada de carbono do Vale do Para\u{00ED}ba."],
+    ["title" => "Atendimento Local", "text" => "Estamos presentes em S\u{00E3}o Jos\u{00E9} dos Campos com equipe t\u{00E9}cnica especializada para atender voc\u{00EA}."],
 ];
 
 $testimonials = [
-    ["text" => "Equipe bem atenciosa, bem profissional! Bem atendido desde a área comercial até a entrega do serviço instalado. Ressaltando também o retorno do pós-venda pelo interesse em saber da satisfação após as primeiras contas!", "author" => "Carlos Azevedo", "role" => "Sistema Residencial"],
-    ["text" => "Excelente lugar e de fácil acesso! Muito impressionado com a infraestrutura da empresa. Além do produto ser de primeira linha, a confiabilidade e o tratamento aos clientes são inquestionáveis. Parabéns Leal Energia por seu trabalho! Recomendo!", "author" => "Cezar Justino", "role" => "Sistema Residencial"],
-    ["text" => "Fomos muito bem atendidos pela Leal Energia Solar! Equipe de instalação muito experiente, muito obrigado pelo serviço prestado! Ótimo investimento!", "author" => "João", "role" => "Planta Industrial"],
+    ["text" => "Equipe bem atenciosa, bem profissional! Bem atendido desde a \u{00E1}rea comercial at\u{00E9} a entrega do servi\u{00E7}o instalado. Ressaltando tamb\u{00E9}m o retorno do p\u{00F3}s-venda pelo interesse em saber da satisfa\u{00E7}\u{00E3}o ap\u{00F3}s as primeiras contas!", "author" => "Carlos Azevedo", "role" => "Sistema Residencial"],
+    ["text" => "Excelente lugar e de f\u{00E1}cil acesso! Muito impressionado com a infraestrutura da empresa. Al\u{00E9}m do produto ser de primeira linha, a confiabilidade e o tratamento aos clientes s\u{00E3}o inquestion\u{00E1}veis. Parab\u{00E9}ns Leal Energia por seu trabalho! Recomendo!", "author" => "Cezar Justino", "role" => "Sistema Residencial"],
+    ["text" => "Fomos muito bem atendidos pela Leal Energia Solar! Equipe de instala\u{00E7}\u{00E3}o muito experiente, muito obrigado pelo servi\u{00E7}o prestado! \u{00D3}timo investimento!", "author" => "Jo\u{00E3}o", "role" => "Planta Industrial"],
 ];
 
 $gallery_images = [
-    ["src" => "assets/projeto-1.webp", "alt" => "Projeto residencial com painéis solares visto por drone"],
-    ["src" => "assets/projeto-2.webp", "alt" => "Instalação solar em cobertura urbana com vista da cidade"],
+    ["src" => "assets/projeto-1.webp", "alt" => "Projeto residencial com pain\u{00E9}is solares visto por drone"],
+    ["src" => "assets/projeto-2.webp", "alt" => "Instala\u{00E7}\u{00E3}o solar em cobertura urbana com vista da cidade"],
     ["src" => "assets/projeto-3.webp", "alt" => "Sistema solar residencial em telhados urbanos"],
     ["src" => "assets/projeto-4.jpg", "alt" => "Projeto fotovoltaico em cobertura comercial"],
-    ["src" => "assets/projeto-5.jpg", "alt" => "Instalação solar em estrutura industrial vista aérea"],
+    ["src" => "assets/projeto-5.jpg", "alt" => "Instala\u{00E7}\u{00E3}o solar em estrutura industrial vista a\u{00E9}rea"],
     ["src" => "assets/projeto-6.jpg", "alt" => "Estacionamento com cobertura de energia solar"],
 ];
 
@@ -124,6 +124,9 @@ function render_footer(): void
   </div>
   <div class="footer-bottom"><div class="container">Copyright 2026 © LEAL ENERGIA</div></div>
 </footer>
+<a class="floating-whatsapp" href="https://wa.me/<?= htmlspecialchars($site_phone_link) ?>" target="_blank" rel="noopener noreferrer" aria-label="Falar com a Leal Energia no WhatsApp">
+  <span>Fale no WhatsApp</span>
+</a>
 <script src="script.js"></script>
 </body>
 </html>

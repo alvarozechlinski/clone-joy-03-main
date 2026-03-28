@@ -19,16 +19,16 @@ const HeroSection = () => (
     <div className="relative z-10 container mx-auto px-4 text-center lg:text-left">
       <div className="mx-auto flex max-w-3xl flex-col items-center lg:mx-0 lg:items-start">
         <h1 className="mb-6 max-w-4xl text-4xl font-black leading-tight text-primary-foreground sm:text-5xl lg:text-6xl">
-          CONSTRUINDO CAMINHOS DO SOL ATÉ VOCÊ!
+          {"CONSTRUINDO CAMINHOS DO SOL AT\u00c9 VOC\u00ca!"}
         </h1>
         <p className="mb-8 max-w-2xl text-base font-medium text-primary-foreground/90 sm:text-lg md:text-xl">
-          Ajudamos empresas e pessoas a mudar sua relação com a energia!
+          {"Ajudamos empresas e pessoas a mudar sua rela\u00e7\u00e3o com a energia!"}
         </p>
         <a
           href="https://wa.me/5512997750212"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex w-full items-center justify-center rounded-full bg-primary px-8 py-4 text-base font-bold text-primary-foreground transition-transform hover:scale-105 animate-pulse-glow sm:w-auto sm:text-lg"
+          className="inline-flex w-full animate-pulse-glow items-center justify-center rounded-full bg-primary px-8 py-4 text-base font-bold text-primary-foreground transition-transform hover:scale-105 sm:w-auto sm:text-lg"
         >
           Comece a economizar agora!
         </a>

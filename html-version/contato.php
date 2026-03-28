@@ -13,9 +13,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($honeypot !== '') {
         $feedback = ['type' => 'success', 'message' => 'Mensagem enviada com sucesso.'];
     } elseif ($nome === '' || $email === '' || $telefone === '' || $mensagem === '') {
-        $feedback = ['type' => 'error', 'message' => 'Preencha todos os campos obrigatórios.'];
+        $feedback = ['type' => 'error', 'message' => 'Preencha todos os campos obrigat' . "\u{00F3}" . 'rios.'];
     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $feedback = ['type' => 'error', 'message' => 'Informe um e-mail válido.'];
+        $feedback = ['type' => 'error', 'message' => 'Informe um e-mail v' . "\u{00E1}" . 'lido.'];
     } else {
         $subject = 'Novo contato pelo site Leal Energia';
         $body = "Nome: {$nome}\n";
@@ -36,19 +36,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $feedback = ['type' => 'success', 'message' => 'Mensagem enviada com sucesso. Em breve entraremos em contato.'];
             $_POST = [];
         } else {
-            $feedback = ['type' => 'error', 'message' => 'Não foi possível enviar pelo servidor agora. Verifique se a função mail() está habilitada na hospedagem.'];
+            $feedback = ['type' => 'error', 'message' => 'N' . "\u{00E3}" . 'o foi poss' . "\u{00ED}" . 'vel enviar pelo servidor agora. Verifique se a fun' . "\u{00E7}" . "\u{00E3}" . 'o mail() est' . "\u{00E1}" . ' habilitada na hospedagem.'];
         }
     }
 }
 ?>
-<?php render_head('Contato', 'Entre em contato e solicite seu orçamento sem compromisso.'); ?>
+<?php render_head('Contato', 'Entre em contato e solicite seu or' . "\u{00E7}" . 'amento sem compromisso.'); ?>
 <?php render_header('contato.php'); ?>
 
 <main>
   <section class="page-hero">
     <div class="container">
       <h1>Contato</h1>
-      <p>Entre em contato e solicite seu orçamento sem compromisso.</p>
+      <p>Entre em contato e solicite seu or&ccedil;amento sem compromisso.</p>
     </div>
   </section>
 
@@ -58,8 +58,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <h2 class="section-title">Fale <span class="text-gradient">Conosco</span></h2>
         <div class="contact-list">
           <div class="contact-item">
-            <strong>Endereço</strong>
-            <span>São José dos Campos - SP</span>
+            <strong>Endere&ccedil;o</strong>
+            <span>S&atilde;o Jos&eacute; dos Campos - SP</span>
           </div>
           <div class="contact-item">
             <strong>Telefone / WhatsApp</strong>
@@ -70,10 +70,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <a class="text-gradient" href="mailto:<?= htmlspecialchars($site_email) ?>"><?= htmlspecialchars($site_email) ?></a>
           </div>
           <div class="contact-item">
-            <strong>Horário de Atendimento</strong>
-            <span>Segunda a Sexta: 08h às 18h</span>
+            <strong>Hor&aacute;rio de Atendimento</strong>
+            <span>Segunda a Sexta: 08h &agrave;s 18h</span>
           </div>
         </div>
+        <p class="section-subtitle" style="margin-top:18px;">Respondemos em hor&aacute;rio comercial e retornamos o mais r&aacute;pido poss&iacute;vel.</p>
       </div>
 
       <div class="card">

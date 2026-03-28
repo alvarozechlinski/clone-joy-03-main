@@ -1,7 +1,7 @@
 import logo from "@/assets/logo-leal.png";
 
 const Footer = () => (
-  <footer className="bg-foreground text-primary-foreground">
+  <footer className="bg-foreground pb-20 text-primary-foreground md:pb-0">
     <div className="container mx-auto px-4 py-10">
       <div className="grid gap-8 text-center lg:grid-cols-3 lg:items-center">
         <div className="flex flex-col items-center gap-3 lg:items-start lg:text-left">

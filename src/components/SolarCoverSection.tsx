@@ -16,7 +16,7 @@ const SolarCoverSection = () => (
         Energia Solar
       </h2>
       <p className="mx-auto max-w-3xl text-base text-primary-foreground/90 sm:text-lg md:text-xl">
-        Entregamos soluções de energia solar, transformando a forma como empresas de todos os portes geram e consomem energia!
+        {"Entregamos solu\u00e7\u00f5es de energia solar, transformando a forma como empresas de todos os portes geram e consomem energia!"}
       </p>
     </div>
   </section>

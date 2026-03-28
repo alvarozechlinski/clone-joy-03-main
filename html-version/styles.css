@@ -29,14 +29,14 @@ body.home-page .site-header {
   right: 0;
   z-index: 100;
   padding: 16px 0;
-  transition: opacity 0.5s ease;
+  transition: padding 0.4s ease;
 }
 .site-header {
   position: sticky;
   top: 0;
   z-index: 100;
   padding: 16px 0;
-  transition: opacity 0.5s ease;
+  transition: padding 0.4s ease;
 }
 .navbar {
   display: flex;
@@ -49,7 +49,7 @@ body.home-page .site-header {
   background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(14px);
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.08);
-  transition: background 0.5s ease, border-color 0.5s ease, box-shadow 0.5s ease, backdrop-filter 0.5s ease;
+  transition: background 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease, backdrop-filter 0.4s ease, padding 0.4s ease;
 }
 .brand img, .footer-brand img {
   width: auto;
@@ -87,9 +87,22 @@ body.home-page .site-header-home .navbar,
   box-shadow: none;
   backdrop-filter: blur(0);
 }
+body.home-page .site-header-home.is-scrolled .navbar,
+.site-header-home.is-scrolled .navbar-home {
+  background: rgba(255, 255, 255, 0.92);
+  border-color: var(--border);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(14px);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 body.home-page .site-header-home .nav-link-home,
 .site-header-home .nav-link-home {
   color: #fff;
+}
+body.home-page .site-header-home.is-scrolled .nav-link-home,
+.site-header-home.is-scrolled .nav-link-home {
+  color: var(--text);
 }
 body.home-page .site-header-home .nav-link-home:hover,
 body.home-page .site-header-home .nav-link-home.active,
@@ -98,17 +111,30 @@ body.home-page .site-header-home .nav-link-home.active,
   background: rgba(255, 255, 255, 0.16);
   color: #fff;
 }
+body.home-page .site-header-home.is-scrolled .nav-link-home:hover,
+body.home-page .site-header-home.is-scrolled .nav-link-home.active,
+.site-header-home.is-scrolled .nav-link-home:hover,
+.site-header-home.is-scrolled .nav-link-home.active {
+  background: var(--green);
+  color: #fff;
+}
 body.home-page .site-header-home .nav-cta-home,
 .site-header-home .nav-cta-home {
   background: #fff;
   color: var(--text);
 }
+body.home-page .site-header-home.is-scrolled .nav-cta-home,
+.site-header-home.is-scrolled .nav-cta-home {
+  background: var(--green);
+  color: #fff;
+}
 body.home-page .site-header-home .menu-toggle-home span,
 .site-header-home .menu-toggle-home span {
   background: #fff;
 }
-body.home-page .site-header.is-hidden {
-  pointer-events: none;
+body.home-page .site-header-home.is-scrolled .menu-toggle-home span,
+.site-header-home.is-scrolled .menu-toggle-home span {
+  background: var(--text);
 }
 .btn-light {
   background: #fff;
@@ -229,6 +255,12 @@ body.home-page .site-header.is-hidden {
   justify-content: center;
   gap: 24px;
 }
+.cta-grid {
+  gap: 0;
+}
+.cta-grid .cta-card + .cta-card {
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
 .cta-grid-html .btn-light {
   width: auto;
   min-width: 240px;
@@ -290,6 +322,20 @@ body.home-page .site-header.is-hidden {
 .testimonial-dot.is-active {
   background: #fff;
 }
+.market-bullets {
+  display: grid;
+  gap: 12px;
+  margin: 24px 0;
+  padding: 0;
+  list-style: none;
+}
+.market-bullets li {
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: rgba(245, 248, 247, 0.9);
+  color: var(--text);
+}
 .contact-list { display: grid; gap: 20px; }
 .contact-item strong { display: block; margin-bottom: 6px; }
 
@@ -349,6 +395,24 @@ input:focus, textarea:focus {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.74);
 }
+.floating-whatsapp {
+  position: fixed;
+  left: 50%;
+  bottom: 16px;
+  z-index: 110;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 20px;
+  border-radius: 999px;
+  background: var(--green);
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  box-shadow: 0 20px 36px rgba(10, 25, 47, 0.22);
+  transform: translateX(-50%);
+}
 
 .sr-reveal {
   opacity: 0;
@@ -403,6 +467,9 @@ input:focus, textarea:focus {
     margin-left: auto;
     margin-right: auto;
   }
+  .floating-whatsapp {
+    display: inline-flex;
+  }
 }
 
 @media (max-width: 720px) {
@@ -420,6 +487,10 @@ input:focus, textarea:focus {
   .cta-grid .cta-card {
     min-height: 260px;
     padding: 40px 22px;
+  }
+  .cta-grid .cta-card + .cta-card {
+    border-left: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
   .logo-bar img {
     max-height: 40px;

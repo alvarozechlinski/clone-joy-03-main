@@ -5,16 +5,16 @@ const ConsultingSection = () => (
     <div className="container mx-auto px-4">
       <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-12">
         <div className="text-center lg:text-left">
-          <h2 className="mb-6 text-3xl font-bold">Consultoria energética</h2>
+          <h2 className="mb-6 text-3xl font-bold">{"Consultoria energ\u00e9tica"}</h2>
 
           <h3 className="mb-3 text-xl font-bold">Desenvolvimento de Projetos</h3>
           <p className="mb-6 text-base text-muted-foreground sm:text-lg">
-            Contamos com experiências sólidas na implementação de projetos de micro e mini geração; ZeroGrid; carregadores elétricos e aquecimento de água!
+            {"Contamos com experi\u00eancias s\u00f3lidas na implementa\u00e7\u00e3o de projetos de micro e mini gera\u00e7\u00e3o, ZeroGrid, carregadores el\u00e9tricos e aquecimento de \u00e1gua!"}
           </p>
 
-          <h3 className="mb-3 text-xl font-bold">Segurança e eficiência</h3>
+          <h3 className="mb-3 text-xl font-bold">{"Seguran\u00e7a e efici\u00eancia"}</h3>
           <p className="mb-8 text-base text-muted-foreground sm:text-lg">
-            Elaboramos cada projeto com um olhar específico, oferecendo soluções complementares e adequadas a cada cliente.
+            {"Elaboramos cada projeto com um olhar espec\u00edfico, oferecendo solu\u00e7\u00f5es complementares e adequadas a cada cliente."}
           </p>
 
           <a
@@ -29,7 +29,7 @@ const ConsultingSection = () => (
         <div className="overflow-hidden rounded-2xl shadow-lg">
           <img
             src={consultingImg}
-            alt="Consultoria energética"
+            alt={"Consultoria energ\u00e9tica"}
             className="h-80 w-full object-cover sm:h-[500px]"
             loading="lazy"
             decoding="async"

@@ -244,6 +244,52 @@ body.home-page .site-header.is-hidden {
 .gallery-item img { width: 100%; height: auto; }
 .testimonial { text-align: center; color: #fff; }
 .testimonial p { font-size: 1.24rem; line-height: 1.8; }
+.testimonial-gallery {
+  position: relative;
+  margin-top: 24px;
+}
+.testimonial-slide {
+  display: none;
+  border-radius: 28px;
+  backdrop-filter: blur(8px);
+}
+.testimonial-slide.is-active {
+  display: block;
+}
+.testimonial-controls {
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+.testimonial-arrow {
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.testimonial-dots {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.testimonial-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  border: 0;
+  background: rgba(255, 255, 255, 0.32);
+  cursor: pointer;
+}
+.testimonial-dot.is-active {
+  background: #fff;
+}
 .contact-list { display: grid; gap: 20px; }
 .contact-item strong { display: block; margin-bottom: 6px; }
 

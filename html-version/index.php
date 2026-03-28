@@ -87,15 +87,26 @@
   </section>
 
   <section class="section section-dark sr-reveal">
-    <div class="container testimonial">
+    <div class="container testimonial" data-testimonials>
       <h2 class="section-title">Depoimentos</h2>
-      <?php foreach ($testimonials as $testimonial): ?>
-        <div class="card" style="margin-top:24px;background:rgba(255,255,255,0.08);color:#fff;border-color:rgba(255,255,255,0.1);">
+      <div class="testimonial-gallery">
+        <?php foreach ($testimonials as $index => $testimonial): ?>
+        <div class="card testimonial-slide<?= $index === 0 ? ' is-active' : '' ?>" data-testimonial-slide style="margin-top:24px;background:rgba(255,255,255,0.08);color:#fff;border-color:rgba(255,255,255,0.1);">
           <p><?= htmlspecialchars($testimonial['text']) ?></p>
           <strong><?= htmlspecialchars($testimonial['author']) ?></strong><br>
           <span><?= htmlspecialchars($testimonial['role']) ?></span>
         </div>
-      <?php endforeach; ?>
+        <?php endforeach; ?>
+      </div>
+      <div class="testimonial-controls">
+        <button class="testimonial-arrow" type="button" data-testimonial-prev aria-label="Anterior">‹</button>
+        <div class="testimonial-dots">
+          <?php foreach ($testimonials as $index => $testimonial): ?>
+            <button class="testimonial-dot<?= $index === 0 ? ' is-active' : '' ?>" type="button" data-testimonial-dot="<?= $index ?>" aria-label="Slide <?= $index + 1 ?>"></button>
+          <?php endforeach; ?>
+        </div>
+        <button class="testimonial-arrow" type="button" data-testimonial-next aria-label="Próximo">›</button>
+      </div>
     </div>
   </section>
 

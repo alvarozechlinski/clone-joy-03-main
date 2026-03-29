@@ -490,7 +490,9 @@ input:focus, textarea:focus {
   .hero .container, .page-hero .container { padding: 110px 0 86px; }
   .page-hero {
     min-height: 360px;
-    background-position: center 30%;
+  }
+  .page-hero-media {
+    object-position: center 30%;
   }
   .gallery-grid { columns: 1; }
   .container { width: min(100% - 24px, 1160px); }
@@ -531,7 +533,9 @@ input:focus, textarea:focus {
   }
   .page-hero {
     min-height: 320px;
-    background-position: center 28%;
+  }
+  .page-hero-media {
+    object-position: center 28%;
   }
   .media-card img {
     min-height: 220px;

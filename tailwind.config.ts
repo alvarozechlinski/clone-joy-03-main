@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        heading: ["Montserrat", "sans-serif"],
-        body: ["Open Sans", "sans-serif"],
+        heading: ["Segoe UI", "Arial", "sans-serif"],
+        body: ["Segoe UI", "Arial", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",

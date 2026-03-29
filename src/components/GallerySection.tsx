@@ -32,6 +32,8 @@ const GallerySection = () => (
               className="w-full object-cover transition-transform duration-500 hover:scale-105"
               loading="lazy"
               decoding="async"
+              width={960}
+              height={640}
             />
           </div>
         ))}

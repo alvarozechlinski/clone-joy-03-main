@@ -4,6 +4,7 @@
 
 <main>
   <section class="page-hero">
+    <img class="page-hero-media" src="assets/page-hero.avif" alt="" aria-hidden="true" fetchpriority="high" decoding="async" width="1600" height="900">
     <div class="container">
       <h1>S&atilde;o Jos&eacute; dos Campos</h1>
       <p>Energia solar para a capital do Vale do Para&iacute;ba.</p>

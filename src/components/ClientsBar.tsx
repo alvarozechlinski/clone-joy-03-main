@@ -33,6 +33,10 @@ const ClientsBar = () => (
               src={client.logo}
               alt={client.name}
               className="max-h-10 max-w-[140px] object-contain sm:max-h-12 sm:max-w-full"
+              loading="lazy"
+              decoding="async"
+              width={160}
+              height={48}
             />
           </a>
         ))}

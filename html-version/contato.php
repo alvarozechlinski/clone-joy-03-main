@@ -46,6 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <main>
   <section class="page-hero">
+    <img class="page-hero-media" src="assets/page-hero.avif" alt="" aria-hidden="true" fetchpriority="high" decoding="async" width="1600" height="900">
     <div class="container">
       <h1>Contato</h1>
       <p>Entre em contato e solicite seu or&ccedil;amento sem compromisso.</p>

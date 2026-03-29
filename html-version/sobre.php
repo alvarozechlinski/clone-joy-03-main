@@ -4,6 +4,7 @@
 
 <main>
   <section class="page-hero">
+    <img class="page-hero-media" src="assets/page-hero.avif" alt="" aria-hidden="true" fetchpriority="high" decoding="async" width="1600" height="900">
     <div class="container">
       <h1>Sobre N&oacute;s</h1>
       <p>Conhe&ccedil;a a Leal Energia e nossa miss&atilde;o de transformar a rela&ccedil;&atilde;o das pessoas com a energia.</p>

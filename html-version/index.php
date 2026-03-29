@@ -4,6 +4,7 @@
 
 <main>
   <section class="hero hero-home">
+    <img class="hero-media" src="assets/hero-home.jpg" alt="" aria-hidden="true" fetchpriority="high" decoding="async" width="1600" height="900">
     <div class="container hero-content">
       <h1>CONSTRUINDO CAMINHOS DO SOL AT&Eacute; VOC&Ecirc;!</h1>
       <p>Ajudamos empresas e pessoas a mudar sua rela&ccedil;&atilde;o com a energia.</p>
@@ -16,7 +17,7 @@
       <div class="grid-7">
         <?php foreach ($clients as $client): ?>
           <a href="<?= htmlspecialchars($client['url']) ?>" target="_blank" rel="noopener noreferrer">
-            <img src="<?= htmlspecialchars($client['logo']) ?>" alt="<?= htmlspecialchars($client['name']) ?>">
+            <img src="<?= htmlspecialchars($client['logo']) ?>" alt="<?= htmlspecialchars($client['name']) ?>" loading="lazy" decoding="async" width="160" height="48">
           </a>
         <?php endforeach; ?>
       </div>
@@ -120,7 +121,7 @@
       <h2 class="section-title" style="text-align:center;">Nossos Projetos</h2>
       <div class="gallery-grid" style="margin-top:34px;">
         <?php foreach ($gallery_images as $image): ?>
-          <div class="gallery-item"><img src="<?= htmlspecialchars($image['src']) ?>" alt="<?= htmlspecialchars($image['alt']) ?>"></div>
+          <div class="gallery-item"><img src="<?= htmlspecialchars($image['src']) ?>" alt="<?= htmlspecialchars($image['alt']) ?>" loading="lazy" decoding="async" width="960" height="640"></div>
         <?php endforeach; ?>
       </div>
     </div>

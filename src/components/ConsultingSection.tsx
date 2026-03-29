@@ -1,4 +1,4 @@
-import consultingImg from "@/assets/consulting.jpg";
+import consultingImg from "@/assets/consulting.avif";
 
 const ConsultingSection = () => (
   <section className="bg-muted/50 py-20">

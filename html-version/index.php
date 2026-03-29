@@ -36,7 +36,7 @@
         <div class="media-card"><img src="assets/solar-rooftop.jpg" alt="Pain&eacute;is solares em telhado comercial"></div>
       </div>
       <div class="grid-2 section-grid" style="margin-top:28px;">
-        <div class="media-card"><img src="assets/solar-residential.jpg" alt="Instala&ccedil;&atilde;o de pain&eacute;is solares residencial"></div>
+        <div class="media-card"><img src="assets/solar-residential.png" alt="Instala&ccedil;&atilde;o de pain&eacute;is solares residencial"></div>
         <div class="card section-copy" style="display:flex;align-items:center;">
           <p class="section-subtitle">Projetamos e implementamos sistemas solares personalizados, otimizando o desempenho energ&eacute;tico e garantindo economia, automa&ccedil;&atilde;o, seguran&ccedil;a e longevidade para o seu neg&oacute;cio.</p>
         </div>
@@ -88,7 +88,7 @@
         <p class="section-subtitle">Elaboramos cada projeto com um olhar espec&iacute;fico, oferecendo solu&ccedil;&otilde;es complementares e adequadas a cada cliente.</p>
         <a class="btn" href="https://wa.me/<?= htmlspecialchars($site_phone_link) ?>" target="_blank" rel="noopener noreferrer">Quero uma consultoria!</a>
       </div>
-      <div class="media-card"><img src="assets/consulting.jpg" alt="Consultoria energ&eacute;tica"></div>
+      <div class="media-card"><img src="assets/consulting.avif" alt="Consultoria energ&eacute;tica"></div>
     </div>
   </section>
 

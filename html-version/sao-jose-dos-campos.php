@@ -18,7 +18,7 @@
         <p class="section-subtitle">S&atilde;o Jos&eacute; dos Campos &eacute; uma das cidades com maior potencial para energia solar no estado de S&atilde;o Paulo. Com alta incid&ecirc;ncia solar e um mercado empresarial em constante crescimento, a cidade &eacute; o cen&aacute;rio perfeito para investir em energia fotovoltaica.</p>
         <p class="section-subtitle">A Leal Energia oferece solu&ccedil;&otilde;es completas para resid&ecirc;ncias, com&eacute;rcios e ind&uacute;strias da regi&atilde;o, com projetos personalizados e atendimento t&eacute;cnico especializado.</p>
       </div>
-      <div class="media-card"><img src="assets/solar-residential.jpg" alt="Energia solar em S&atilde;o Jos&eacute; dos Campos"></div>
+      <div class="media-card"><img src="assets/solar-residential.png" alt="Energia solar em S&atilde;o Jos&eacute; dos Campos"></div>
     </div>
   </section>
 

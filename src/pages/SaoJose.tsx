@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
 import pageHero from "@/assets/page-hero.avif";
-import solarResidential from "@/assets/solar-residential.jpg";
+import solarResidential from "@/assets/solar-residential.png";
 import { Building2, Leaf, MapPin, Sun } from "lucide-react";
 
 const features = [

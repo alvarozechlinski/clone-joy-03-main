@@ -55,8 +55,11 @@ const ContatoPage = () => {
     <div className="min-h-screen">
       <Navbar />
 
-      <section className="relative overflow-hidden pb-20 pt-32">
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${pageHero})` }} />
+      <section className="relative flex min-h-[360px] items-end overflow-hidden pb-20 pt-32 sm:min-h-[420px]">
+        <div
+          className="absolute inset-0 bg-cover"
+          style={{ backgroundImage: `url(${pageHero})`, backgroundPosition: "center 32%" }}
+        />
         <div className="absolute inset-0 bg-foreground/60" />
         <div className="relative z-10 container mx-auto px-4 text-center">
           <h1 className="mb-4 text-4xl font-black text-primary-foreground md:text-5xl">Contato</h1>

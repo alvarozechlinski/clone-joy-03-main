@@ -13,7 +13,7 @@
 
   <section class="section logo-bar sr-reveal">
     <div class="container">
-      <div class="grid-6">
+      <div class="grid-7">
         <?php foreach ($clients as $client): ?>
           <a href="<?= htmlspecialchars($client['url']) ?>" target="_blank" rel="noopener noreferrer">
             <img src="<?= htmlspecialchars($client['logo']) ?>" alt="<?= htmlspecialchars($client['name']) ?>">

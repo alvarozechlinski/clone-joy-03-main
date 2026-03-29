@@ -179,7 +179,12 @@ img { display: block; max-width: 100%; }
   align-items: center;
   background: url("assets/hero-home.jpg") center/cover no-repeat;
 }
-.page-hero { background: url("assets/page-hero.avif") center/cover no-repeat; }
+.page-hero {
+  min-height: 420px;
+  display: flex;
+  align-items: flex-end;
+  background: url("assets/page-hero.avif") center 32% / cover no-repeat;
+}
 .hero .container, .page-hero .container { padding: 130px 0 100px; }
 .hero h1 { max-width: 720px; margin: 0 0 22px; font-size: clamp(2.6rem, 5vw, 4.8rem); line-height: 1.05; }
 .page-hero h1 { margin: 0 0 12px; font-size: clamp(2.4rem, 4vw, 4rem); }
@@ -204,11 +209,12 @@ img { display: block; max-width: 100%; }
   font-weight: 700;
 }
 
-.grid-2, .grid-3, .grid-4, .grid-6 { display: grid; gap: 28px; }
+.grid-2, .grid-3, .grid-4, .grid-6, .grid-7 { display: grid; gap: 28px; }
 .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .grid-6 { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+.grid-7 { grid-template-columns: repeat(7, minmax(0, 1fr)); }
 
 .card {
   padding: 28px;
@@ -429,7 +435,7 @@ input:focus, textarea:focus {
   .mobile-menu.is-open { display: block; }
   .grid-2, .grid-3, .footer-grid { grid-template-columns: 1fr; }
   .grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .grid-6 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .grid-6, .grid-7 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .footer-contact { justify-self: center; }
   .gallery-grid { columns: 2; }
   .hero .container, .page-hero .container,
@@ -473,6 +479,10 @@ input:focus, textarea:focus {
 
 @media (max-width: 720px) {
   .hero .container, .page-hero .container { padding: 110px 0 86px; }
+  .page-hero {
+    min-height: 360px;
+    background-position: center 30%;
+  }
   .gallery-grid { columns: 1; }
   .container { width: min(100% - 24px, 1160px); }
   .section { padding: 72px 0; }
@@ -482,7 +492,7 @@ input:focus, textarea:focus {
   .hero p, .page-hero p, .section-subtitle {
     font-size: 1rem;
   }
-  .grid-4, .grid-6 { grid-template-columns: 1fr; }
+  .grid-4, .grid-6, .grid-7 { grid-template-columns: 1fr; }
   .cta-grid .cta-card {
     min-height: 260px;
     padding: 40px 22px;
@@ -509,6 +519,10 @@ input:focus, textarea:focus {
   }
   .hero .container, .page-hero .container {
     padding: 100px 0 72px;
+  }
+  .page-hero {
+    min-height: 320px;
+    background-position: center 28%;
   }
   .media-card img {
     min-height: 220px;

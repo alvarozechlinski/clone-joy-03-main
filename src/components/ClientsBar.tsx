@@ -13,13 +13,13 @@ const clients = [
   { name: "3Corp", url: "https://www.3corp.com.br/en/", logo: logo3Corp },
   { name: "Achiropita", url: "https://achiropita.org.br/", logo: logoAchiropita },
   { name: "Packwind", url: "https://packwind.com.br/", logo: logoPackwind },
-  { name: "Novo Cliente", url: "", logo: logoNovoCliente },
+  { name: "BRASOL", url: "https://www.brasol.co/", logo: logoNovoCliente },
 ];
 
 const ClientsBar = () => (
   <section className="border-b border-border bg-background py-10">
     <div className="container mx-auto px-4">
-      <div className="grid grid-cols-2 items-center gap-6 sm:grid-cols-3 lg:grid-cols-6 lg:gap-8">
+      <div className="grid grid-cols-2 items-center gap-6 sm:grid-cols-3 lg:grid-cols-7 lg:gap-6">
         {clients.map((client) => (
           <a
             key={client.name}

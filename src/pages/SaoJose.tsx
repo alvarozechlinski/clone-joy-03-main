@@ -1,8 +1,8 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
-import pageHero from "@/assets/page-hero.avif";
-import solarResidential from "@/assets/solar-residential.png";
+import saoJoseHero from "@/assets/sao-jose-hero.jpg";
+import saoJoseImage from "@/assets/sao-jose.jpg";
 import { Building2, Leaf, MapPin, Sun } from "lucide-react";
 
 const features = [
@@ -19,7 +19,7 @@ const SaoJosePage = () => (
     <section className="relative flex min-h-[360px] items-end overflow-hidden pb-20 pt-32 sm:min-h-[420px]">
       <div
         className="absolute inset-0 bg-cover"
-        style={{ backgroundImage: `url(${pageHero})`, backgroundPosition: "center 32%" }}
+        style={{ backgroundImage: `url(${saoJoseHero})`, backgroundPosition: "center 34%" }}
       />
       <div className="absolute inset-0 bg-foreground/60" />
       <div className="relative z-10 container mx-auto px-4 text-center">
@@ -47,7 +47,7 @@ const SaoJosePage = () => (
               </p>
             </div>
             <div className="overflow-hidden rounded-2xl shadow-lg">
-              <img src={solarResidential} alt={"Energia solar em S\u00e3o Jos\u00e9 dos Campos"} className="h-80 w-full object-cover" loading="lazy" decoding="async" />
+              <img src={saoJoseImage} alt={"Energia solar em S\u00e3o Jos\u00e9 dos Campos"} className="h-80 w-full object-cover" loading="lazy" decoding="async" />
             </div>
           </div>
         </div>

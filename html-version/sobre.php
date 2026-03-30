@@ -4,7 +4,7 @@
 
 <main>
   <section class="page-hero">
-    <img class="page-hero-media" src="assets/page-hero.avif" alt="" aria-hidden="true" fetchpriority="high" decoding="async" width="1600" height="900">
+    <img class="page-hero-media" src="assets/sobre-hero.jpg" alt="" aria-hidden="true" fetchpriority="high" decoding="async" width="1600" height="900">
     <div class="container">
       <h1>Sobre N&oacute;s</h1>
       <p>Conhe&ccedil;a a Leal Energia e nossa miss&atilde;o de transformar a rela&ccedil;&atilde;o das pessoas com a energia.</p>
@@ -18,7 +18,7 @@
         <p class="section-subtitle">A Leal Energia nasceu com a miss&atilde;o de democratizar o acesso &agrave; energia solar no Brasil. Com anos de experi&ecirc;ncia no mercado, j&aacute; ajudamos centenas de empresas e resid&ecirc;ncias a reduzir seus custos com energia e a contribuir para um futuro mais sustent&aacute;vel.</p>
         <p class="section-subtitle">Atuamos em todo o Vale do Para&iacute;ba e regi&atilde;o, oferecendo solu&ccedil;&otilde;es completas em energia solar fotovoltaica, desde o projeto at&eacute; a instala&ccedil;&atilde;o e manuten&ccedil;&atilde;o.</p>
       </div>
-      <div class="media-card"><img src="assets/solar-rooftop.jpg" alt="Equipe Leal Energia"></div>
+      <div class="media-card"><img src="assets/nossa-historia.jpg" alt="Equipe Leal Energia"></div>
     </div>
   </section>
 

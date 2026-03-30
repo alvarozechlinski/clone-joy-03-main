@@ -1,8 +1,8 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
-import solarRooftop from "@/assets/solar-rooftop.jpg";
-import pageHero from "@/assets/page-hero.avif";
+import nossaHistoria from "@/assets/nossa-historia.jpg";
+import sobreHero from "@/assets/sobre-hero.jpg";
 import { Award, Lightbulb, Target, Users } from "lucide-react";
 
 const values = [
@@ -19,7 +19,7 @@ const SobrePage = () => (
     <section className="relative flex min-h-[360px] items-end overflow-hidden pb-20 pt-32 sm:min-h-[420px]">
       <div
         className="absolute inset-0 bg-cover"
-        style={{ backgroundImage: `url(${pageHero})`, backgroundPosition: "center 32%" }}
+        style={{ backgroundImage: `url(${sobreHero})`, backgroundPosition: "center 42%" }}
       />
       <div className="absolute inset-0 bg-foreground/60" />
       <div className="relative z-10 container mx-auto px-4 text-center">
@@ -47,7 +47,7 @@ const SobrePage = () => (
               </p>
             </div>
             <div className="overflow-hidden rounded-2xl shadow-lg">
-              <img src={solarRooftop} alt="Equipe Leal Energia" className="h-80 w-full object-cover" loading="lazy" decoding="async" />
+              <img src={nossaHistoria} alt="Equipe Leal Energia" className="h-80 w-full object-cover" loading="lazy" decoding="async" />
             </div>
           </div>
         </div>

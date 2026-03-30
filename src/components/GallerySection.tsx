@@ -1,3 +1,9 @@
+import projetoAntigo1 from "@/assets/projeto-1.webp";
+import projetoAntigo2 from "@/assets/projeto-2.webp";
+import projetoAntigo3 from "@/assets/projeto-3.webp";
+import projetoAntigo4 from "@/assets/projeto-antigo-4.jpg";
+import projetoAntigo5 from "@/assets/projeto-antigo-5.jpg";
+import projetoAntigo6 from "@/assets/projeto-antigo-6.jpg";
 import projeto1 from "@/assets/projeto-1.jpg";
 import projeto2 from "@/assets/projeto-2.jpg";
 import projeto3 from "@/assets/projeto-3.jpg";
@@ -8,6 +14,12 @@ import projeto7 from "@/assets/projeto-7.jpg";
 import projeto8 from "@/assets/projeto-8.jpg";
 
 const images = [
+  { src: projetoAntigo1, alt: "Projeto residencial com paineis solares visto por drone" },
+  { src: projetoAntigo2, alt: "Instalacao solar em cobertura urbana com vista da cidade" },
+  { src: projetoAntigo3, alt: "Sistema solar residencial em telhados urbanos" },
+  { src: projetoAntigo4, alt: "Projeto fotovoltaico em cobertura comercial" },
+  { src: projetoAntigo5, alt: "Instalacao solar em estrutura industrial vista aerea" },
+  { src: projetoAntigo6, alt: "Estacionamento com cobertura de energia solar" },
   { src: projeto1, alt: "Projeto solar residencial com cobertura completa visto por drone" },
   { src: projeto2, alt: "Equipe realizando instalacao de paineis solares em telhado" },
   { src: projeto3, alt: "Sistema fotovoltaico residencial em cobertura plana" },

@@ -51,6 +51,12 @@ $testimonials = [
 ];
 
 $gallery_images = [
+    ["src" => "assets/projeto-1.webp", "alt" => "Projeto residencial com pain\u{00E9}is solares visto por drone"],
+    ["src" => "assets/projeto-2.webp", "alt" => "Instala\u{00E7}\u{00E3}o solar em cobertura urbana com vista da cidade"],
+    ["src" => "assets/projeto-3.webp", "alt" => "Sistema solar residencial em telhados urbanos"],
+    ["src" => "assets/projeto-antigo-4.jpg", "alt" => "Projeto fotovoltaico em cobertura comercial"],
+    ["src" => "assets/projeto-antigo-5.jpg", "alt" => "Instala\u{00E7}\u{00E3}o solar em estrutura industrial vista a\u{00E9}rea"],
+    ["src" => "assets/projeto-antigo-6.jpg", "alt" => "Estacionamento com cobertura de energia solar"],
     ["src" => "assets/projeto-1.jpg", "alt" => "Projeto solar residencial com cobertura completa visto por drone"],
     ["src" => "assets/projeto-2.jpg", "alt" => "Equipe realizando instala\u{00E7}\u{00E3}o de pain\u{00E9}is solares em telhado"],
     ["src" => "assets/projeto-3.jpg", "alt" => "Sistema fotovoltaico residencial em cobertura plana"],

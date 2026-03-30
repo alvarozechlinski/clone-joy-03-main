@@ -124,6 +124,9 @@
           <div class="gallery-item"><img src="<?= htmlspecialchars($image['src']) ?>" alt="<?= htmlspecialchars($image['alt']) ?>" loading="lazy" decoding="async" width="960" height="640"></div>
         <?php endforeach; ?>
       </div>
+      <div class="gallery-fade">
+        <p class="gallery-fade-text">+500 Projetos Realizados</p>
+      </div>
     </div>
   </section>
 </main>

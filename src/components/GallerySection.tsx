@@ -42,12 +42,12 @@ const GallerySection = () => (
         {images.map((img, index) => (
           <div
             key={index}
-            className="break-inside-avoid overflow-hidden rounded-2xl shadow-md transition-shadow hover:shadow-xl"
+            className="break-inside-avoid aspect-[4/3] overflow-hidden rounded-2xl shadow-md transition-shadow hover:shadow-xl"
           >
             <img
               src={img.src}
               alt={img.alt}
-              className="w-full object-cover transition-transform duration-500 hover:scale-105"
+              className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
               loading="lazy"
               decoding="async"
               width={960}
@@ -57,7 +57,7 @@ const GallerySection = () => (
         ))}
       </div>
       <div className="mt-12 rounded-[2rem] bg-gradient-to-b from-transparent via-primary/5 to-transparent px-6 py-10 text-center">
-        <p className="text-3xl font-black tracking-tight text-[#5ea81f] md:text-4xl">
+        <p className="projects-fade-in text-3xl font-black tracking-tight text-[#5ea81f] md:text-4xl">
           +500 Projetos Realizados
         </p>
       </div>

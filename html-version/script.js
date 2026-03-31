@@ -64,3 +64,13 @@ if (testimonialRoot) {
     dot.addEventListener("click", () => renderTestimonial(index));
   });
 }
+
+const projectsFadeText = document.querySelector("[data-projects-fade]");
+if (projectsFadeText) {
+  projectsFadeText.classList.remove("is-visible");
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      projectsFadeText.classList.add("is-visible");
+    });
+  });
+}

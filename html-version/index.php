@@ -125,7 +125,7 @@
         <?php endforeach; ?>
       </div>
       <div class="gallery-fade">
-        <p class="gallery-fade-text">+500 Projetos Realizados</p>
+        <p class="gallery-fade-text" data-projects-fade>+500 Projetos Realizados</p>
       </div>
     </div>
   </section>

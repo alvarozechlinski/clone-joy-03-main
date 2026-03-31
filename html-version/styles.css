@@ -302,6 +302,10 @@ img { display: block; max-width: 100%; }
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 900;
   letter-spacing: -0.04em;
+  opacity: 0;
+  transform: translateY(18px);
+}
+.gallery-fade-text.is-visible {
   animation: projectsFadeIn 1s ease-out both;
 }
 @keyframes projectsFadeIn {
@@ -315,7 +319,10 @@ img { display: block; max-width: 100%; }
   }
 }
 @media (prefers-reduced-motion: reduce) {
-  .gallery-fade-text {
+  .gallery-fade-text,
+  .gallery-fade-text.is-visible {
+    opacity: 1;
+    transform: none;
     animation: none;
   }
 }

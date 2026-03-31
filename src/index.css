@@ -78,7 +78,12 @@
     background-clip: text;
   }
 
-  .projects-fade-in {
+  .projects-fade-target {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  .projects-fade-target.is-visible {
     animation: projectsFadeIn 1s ease-out both;
   }
 }
@@ -95,7 +100,10 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .projects-fade-in {
+  .projects-fade-target,
+  .projects-fade-target.is-visible {
+    opacity: 1;
+    transform: none;
     animation: none;
   }
 }

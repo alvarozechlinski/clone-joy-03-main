@@ -1,5 +1,5 @@
 <?php require __DIR__ . '/includes/site.php'; ?>
-<?php render_head('S' . "\u{00E3}" . 'o Jos' . "\u{00E9}" . ' dos Campos', 'Energia solar em S' . "\u{00E3}" . 'o Jos' . "\u{00E9}" . ' dos Campos para resid' . "\u{00EA}" . 'ncias, com' . "\u{00E9}" . 'rcios e ind' . "\u{00FA}" . 'strias.'); ?>
+<?php render_head('S' . "\u{00E3}" . 'o Jos' . "\u{00E9}" . ' dos Campos', 'Energia solar em S' . "\u{00E3}" . 'o Jos' . "\u{00E9}" . ' dos Campos para resid' . "\u{00EA}" . 'ncias, com' . "\u{00E9}" . 'rcios e ind' . "\u{00FA}" . 'strias.', '', 'assets/sao-jose-hero.jpg'); ?>
 <?php render_header('sao-jose-dos-campos.php'); ?>
 
 <main>

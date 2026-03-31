@@ -1,5 +1,5 @@
 import solarRooftop from "@/assets/solar-rooftop.jpg";
-import solarResidential from "@/assets/solar-residential.png";
+import solarResidential from "@/assets/solar-residential.jpg";
 
 const AboutSection = () => (
   <section id="sobre" className="py-20">

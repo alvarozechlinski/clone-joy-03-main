@@ -12,6 +12,7 @@ import projeto5 from "@/assets/projeto-5.jpg";
 import projeto6 from "@/assets/projeto-6.jpg";
 import projeto7 from "@/assets/projeto-7.jpg";
 import projeto8 from "@/assets/projeto-8.jpg";
+import projeto9 from "@/assets/projeto-9.jpg";
 
 const images = [
   { src: projetoAntigo1, alt: "Projeto residencial com paineis solares visto por drone" },
@@ -28,6 +29,7 @@ const images = [
   { src: projeto6, alt: "Projeto fotovoltaico em ampla cobertura comercial" },
   { src: projeto7, alt: "Sistema solar instalado em cobertura urbana proxima ao centro" },
   { src: projeto8, alt: "Projeto solar residencial moderno em loteamento" },
+  { src: projeto9, alt: "Projeto solar industrial com vista aerea ampla" },
 ];
 
 const GallerySection = () => (

@@ -65,9 +65,10 @@ $gallery_images = [
     ["src" => "assets/projeto-6.jpg", "alt" => "Projeto fotovoltaico em ampla cobertura comercial"],
     ["src" => "assets/projeto-7.jpg", "alt" => "Sistema solar instalado em cobertura urbana pr\u{00F3}xima ao centro"],
     ["src" => "assets/projeto-8.jpg", "alt" => "Projeto solar residencial moderno em loteamento"],
+    ["src" => "assets/projeto-9.jpg", "alt" => "Projeto solar industrial com vista a\u{00E9}rea ampla"],
 ];
 
-function render_head(string $title, string $description, string $body_class = ''): void
+function render_head(string $title, string $description, string $body_class = '', ?string $preload_image = null): void
 {
     global $site_name;
     ?>
@@ -79,11 +80,10 @@ function render_head(string $title, string $description, string $body_class = ''
   <title><?= htmlspecialchars($title) ?> | <?= htmlspecialchars($site_name) ?></title>
   <meta name="description" content="<?= htmlspecialchars($description) ?>">
   <meta name="theme-color" content="#0d4f33">
-  <?php if ($body_class === 'home-page'): ?>
-  <link rel="preload" as="image" href="assets/hero-home.jpg" fetchpriority="high">
-  <?php else: ?>
-  <link rel="preload" as="image" href="assets/page-hero.avif" fetchpriority="high">
-  <?php endif; ?>
+  <?php
+    $preload = $preload_image ?? ($body_class === 'home-page' ? 'assets/hero-home.jpg' : 'assets/page-hero.avif');
+  ?>
+  <link rel="preload" as="image" href="<?= htmlspecialchars($preload) ?>" fetchpriority="high">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="<?= htmlspecialchars($body_class) ?>">

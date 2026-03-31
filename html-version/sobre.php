@@ -1,5 +1,5 @@
 <?php require __DIR__ . '/includes/site.php'; ?>
-<?php render_head('Sobre', 'Conhe' . "\u{00E7}" . 'a a Leal Energia e a miss' . "\u{00E3}" . 'o de transformar a rela' . "\u{00E7}" . "\u{00E3}" . 'o das pessoas com a energia.'); ?>
+<?php render_head('Sobre', 'Conhe' . "\u{00E7}" . 'a a Leal Energia e a miss' . "\u{00E3}" . 'o de transformar a rela' . "\u{00E7}" . "\u{00E3}" . 'o das pessoas com a energia.', '', 'assets/sobre-hero.jpg'); ?>
 <?php render_header('sobre.php'); ?>
 
 <main>

@@ -471,11 +471,17 @@ input {
 
 .form-card {
   background: rgba(255, 255, 255, 0.92);
+  color: var(--primary);
 }
 
 .form-card form {
   display: grid;
   gap: 10px;
+}
+
+.form-card h3,
+.form-card label {
+  color: var(--primary);
 }
 
 .form-card label {

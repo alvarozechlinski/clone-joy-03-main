@@ -16,29 +16,51 @@ const clients = [
   { name: "BRASOL", url: "https://www.brasol.co/", logo: logoNovoCliente },
 ];
 
-const ClientsBar = () => (
+type ClientsBarProps = {
+  disableLinks?: boolean;
+};
+
+const ClientsBar = ({ disableLinks = false }: ClientsBarProps) => (
   <section className="border-b border-border bg-background py-10">
     <div className="container mx-auto px-4">
       <div className="grid grid-cols-2 items-center gap-6 sm:grid-cols-3 lg:grid-cols-7 lg:gap-6">
         {clients.map((client) => (
-          <a
-            key={client.name}
-            href={client.url || undefined}
-            target={client.url ? "_blank" : undefined}
-            rel={client.url ? "noopener noreferrer" : undefined}
-            className="flex h-16 items-center justify-center opacity-70 transition-opacity hover:opacity-100"
-            aria-label={client.name}
-          >
-            <img
-              src={client.logo}
-              alt={client.name}
-              className="max-h-10 max-w-[140px] object-contain sm:max-h-12 sm:max-w-full"
-              loading="lazy"
-              decoding="async"
-              width={160}
-              height={48}
-            />
-          </a>
+          disableLinks ? (
+            <div
+              key={client.name}
+              className="flex h-16 items-center justify-center opacity-70"
+              aria-label={client.name}
+            >
+              <img
+                src={client.logo}
+                alt={client.name}
+                className="max-h-10 max-w-[140px] object-contain sm:max-h-12 sm:max-w-full"
+                loading="lazy"
+                decoding="async"
+                width={160}
+                height={48}
+              />
+            </div>
+          ) : (
+            <a
+              key={client.name}
+              href={client.url || undefined}
+              target={client.url ? "_blank" : undefined}
+              rel={client.url ? "noopener noreferrer" : undefined}
+              className="flex h-16 items-center justify-center opacity-70 transition-opacity hover:opacity-100"
+              aria-label={client.name}
+            >
+              <img
+                src={client.logo}
+                alt={client.name}
+                className="max-h-10 max-w-[140px] object-contain sm:max-h-12 sm:max-w-full"
+                loading="lazy"
+                decoding="async"
+                width={160}
+                height={48}
+              />
+            </a>
+          )
         ))}
       </div>
     </div>

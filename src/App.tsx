@@ -6,6 +6,7 @@ const Index = lazy(() => import("./pages/Index.tsx"));
 const Sobre = lazy(() => import("./pages/Sobre.tsx"));
 const SaoJose = lazy(() => import("./pages/SaoJose.tsx"));
 const Contato = lazy(() => import("./pages/Contato.tsx"));
+const OrcamentoEnergiaSolar = lazy(() => import("./pages/OrcamentoEnergiaSolar.tsx"));
 const NotFound = lazy(() => import("./pages/NotFound.tsx"));
 
 const App = () => (
@@ -17,6 +18,7 @@ const App = () => (
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/sao-jose-dos-campos" element={<SaoJose />} />
           <Route path="/contato" element={<Contato />} />
+          <Route path="/programareformabr" element={<OrcamentoEnergiaSolar />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>

@@ -65,7 +65,7 @@ form.addEventListener("submit", async (event) => {
   }
 
   if (whatsapp.length < 10 || whatsapp.length > 11) {
-    setFeedback("error", "Informe um WhatsApp válido com DDD.");
+    setFeedback("error", "Informe um WhatsApp v\u00E1lido com DDD.");
     return;
   }
 
@@ -80,7 +80,7 @@ form.addEventListener("submit", async (event) => {
   }
 
   if (!extractDigits(conta) || Number(extractDigits(conta)) <= 0) {
-    setFeedback("error", "Informe o valor médio da conta de luz.");
+    setFeedback("error", "Informe o valor m\u00E9dio da conta de luz.");
     return;
   }
 
@@ -94,7 +94,7 @@ form.addEventListener("submit", async (event) => {
   submission.append("WhatsApp (com DDD)", formatWhatsApp(whatsapp));
   submission.append("Sua cidade", cidade);
   submission.append("Renda bruta familiar", formatCurrencyInput(renda));
-  submission.append("Valor médio da conta de luz", formatCurrencyInput(conta));
+  submission.append("Valor m\u00E9dio da conta de luz", formatCurrencyInput(conta));
   submission.append(
     "Resumo do lead",
     [
@@ -102,7 +102,7 @@ form.addEventListener("submit", async (event) => {
       `WhatsApp (com DDD): ${formatWhatsApp(whatsapp)}`,
       `Sua cidade: ${cidade}`,
       `Renda bruta familiar: ${formatCurrencyInput(renda)}`,
-      `Valor médio da conta de luz: ${formatCurrencyInput(conta)}`,
+      `Valor m\u00E9dio da conta de luz: ${formatCurrencyInput(conta)}`,
     ].join("\n"),
   );
   submission.append("_subject", "Novo lead - Programa Reforma Brasil");
@@ -122,7 +122,7 @@ form.addEventListener("submit", async (event) => {
     const payload = await response.json().catch(() => null);
 
     if (!response.ok || (payload && payload.success === false)) {
-      throw new Error((payload && payload.message) || "Não foi possível enviar os dados agora.");
+      throw new Error((payload && payload.message) || "N\u00E3o foi poss\u00EDvel enviar os dados agora.");
     }
 
     form.reset();
@@ -132,7 +132,7 @@ form.addEventListener("submit", async (event) => {
       "error",
       error instanceof Error && error.message
         ? error.message
-        : "Não foi possível enviar o formulário. Tente novamente em alguns instantes.",
+        : "N\u00E3o foi poss\u00EDvel enviar o formul\u00E1rio. Tente novamente em alguns instantes.",
     );
   } finally {
     submitButton.disabled = false;

@@ -471,7 +471,7 @@ input {
 
 .form-card {
   background: rgba(255, 255, 255, 0.92);
-  color: var(--primary);
+  color: #183b6f !important;
 }
 
 .form-card form {
@@ -479,9 +479,9 @@ input {
   gap: 10px;
 }
 
-.form-card h3,
-.form-card label {
-  color: var(--primary);
+.section-cta .form-card h3,
+.section-cta .form-card label {
+  color: #183b6f !important;
 }
 
 .form-card label {

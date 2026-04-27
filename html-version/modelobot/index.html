@@ -715,6 +715,69 @@
       font-size: 13px;
     }
 
+    .success-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background: rgba(6, 20, 42, .72);
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity .22s ease, visibility .22s ease;
+    }
+
+    .success-modal.is-open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    .success-card {
+      width: min(460px, 100%);
+      padding: 30px;
+      border: 1px solid rgba(255, 255, 255, .34);
+      border-radius: var(--radius);
+      background:
+        linear-gradient(145deg, rgba(255, 255, 255, .98), rgba(245, 248, 252, .98)),
+        radial-gradient(circle at 90% 10%, rgba(0, 166, 81, .14), transparent 35%);
+      box-shadow: 0 30px 90px rgba(0, 18, 48, .32);
+      transform: translateY(14px) scale(.98);
+      transition: transform .22s ease;
+    }
+
+    .success-modal.is-open .success-card {
+      transform: translateY(0) scale(1);
+    }
+
+    .success-icon {
+      display: grid;
+      place-items: center;
+      width: 58px;
+      height: 58px;
+      margin-bottom: 18px;
+      color: var(--white);
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--green), #23c878);
+      box-shadow: 0 14px 28px rgba(0, 166, 81, .22);
+      font-size: 32px;
+      font-weight: 800;
+    }
+
+    .success-card h3 {
+      margin: 0 0 10px;
+      color: var(--ink);
+      font-size: clamp(26px, 4vw, 34px);
+      line-height: 1.1;
+    }
+
+    .success-card p {
+      margin: 0 0 22px;
+      color: var(--muted);
+    }
+
     .cta-final {
       position: relative;
       overflow: hidden;
@@ -1277,9 +1340,50 @@
       </div>
     </div>
   </footer>
+  <div class="success-modal" id="success-modal" role="dialog" aria-modal="true" aria-labelledby="success-title" aria-hidden="true">
+    <div class="success-card">
+      <div class="success-icon" aria-hidden="true">✓</div>
+      <h3 id="success-title">Obrigado pelo envio!</h3>
+      <p>Recebemos seus dados. A equipe da Leal Energia vai analisar as informações e entrar em contato em breve.</p>
+      <button class="btn btn-primary" type="button" data-close-success>Fechar</button>
+    </div>
+  </div>
   <script>
     const leadForm = document.getElementById("lead-form");
     const formStatus = document.getElementById("form-status");
+    const successModal = document.getElementById("success-modal");
+    const successCloseButtons = document.querySelectorAll("[data-close-success]");
+
+    const openSuccessModal = () => {
+      if (!successModal) return;
+      successModal.classList.add("is-open");
+      successModal.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+      successCloseButtons[0]?.focus();
+    };
+
+    const closeSuccessModal = () => {
+      if (!successModal) return;
+      successModal.classList.remove("is-open");
+      successModal.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+    };
+
+    successCloseButtons.forEach((button) => {
+      button.addEventListener("click", closeSuccessModal);
+    });
+
+    successModal?.addEventListener("click", (event) => {
+      if (event.target === successModal) {
+        closeSuccessModal();
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && successModal?.classList.contains("is-open")) {
+        closeSuccessModal();
+      }
+    });
 
     if (leadForm && formStatus) {
       const submitButton = leadForm.querySelector('button[type="submit"]');
@@ -1310,6 +1414,7 @@
 
           leadForm.reset();
           formStatus.textContent = "Solicitação enviada com sucesso. Em breve entraremos em contato.";
+          openSuccessModal();
         } catch (error) {
           formStatus.textContent = "Não foi possível enviar agora. Tente novamente ou fale pelo WhatsApp.";
         } finally {

@@ -1197,7 +1197,10 @@
             <span class="pill">Sem compromisso</span>
           </div>
         </div>
-        <form class="form-panel" action="mailto:alvaro.zechlinski@lealenergia.com.br" method="post" enctype="text/plain">
+        <form class="form-panel" id="lead-form" action="https://formsubmit.co/ajax/alvaro.zechlinski@lealenergia.com.br" method="POST">
+          <input type="hidden" name="_subject" value="Novo lead - Modelo BOT Leal Energia">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
           <div class="form-grid">
             <div class="field">
               <label for="nome">Nome</label>
@@ -1232,7 +1235,7 @@
           </div>
           <div class="form-foot">
             <button class="btn btn-primary" type="submit">Solicitar análise</button>
-            <span class="fine-print">A equipe da Leal Energia retorna com a análise inicial e os próximos passos.</span>
+            <span class="fine-print" id="form-status" aria-live="polite">A equipe da Leal Energia retorna com a análise inicial e os próximos passos.</span>
           </div>
         </form>
       </div>
@@ -1274,5 +1277,55 @@
       </div>
     </div>
   </footer>
+  <script>
+    const leadForm = document.getElementById("lead-form");
+    const formStatus = document.getElementById("form-status");
+
+    if (leadForm && formStatus) {
+      const submitButton = leadForm.querySelector('button[type="submit"]');
+      const defaultStatus = formStatus.textContent;
+
+      leadForm.addEventListener("submit", async (event) => {
+        event.preventDefault();
+
+        if (submitButton) {
+          submitButton.disabled = true;
+          submitButton.textContent = "Enviando...";
+        }
+
+        formStatus.textContent = "Enviando sua solicitação...";
+
+        try {
+          const response = await fetch(leadForm.action, {
+            method: "POST",
+            body: new FormData(leadForm),
+            headers: {
+              Accept: "application/json",
+            },
+          });
+
+          if (!response.ok) {
+            throw new Error("Falha no envio");
+          }
+
+          leadForm.reset();
+          formStatus.textContent = "Solicitação enviada com sucesso. Em breve entraremos em contato.";
+        } catch (error) {
+          formStatus.textContent = "Não foi possível enviar agora. Tente novamente ou fale pelo WhatsApp.";
+        } finally {
+          if (submitButton) {
+            submitButton.disabled = false;
+            submitButton.textContent = "Solicitar análise";
+          }
+
+          window.setTimeout(() => {
+            if (formStatus.textContent !== defaultStatus) {
+              formStatus.textContent = defaultStatus;
+            }
+          }, 9000);
+        }
+      });
+    }
+  </script>
 </body>
 </html>

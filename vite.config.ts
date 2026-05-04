@@ -19,6 +19,7 @@ export default defineConfig(({ mode }) => ({
         main: path.resolve(__dirname, "index.html"),
         programareformabr: path.resolve(__dirname, "programareformabr/index.html"),
         modelobot: path.resolve(__dirname, "modelobot/index.html"),
+        modelobot_ricadoz: path.resolve(__dirname, "modelobot_ricadoz/index.html"),
       },
     },
   },
